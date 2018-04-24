@@ -4,6 +4,7 @@ from flask import Flask, jsonify, abort, request, make_response, url_for
 from flask_httpauth import HTTPBasicAuth
 from datetime import datetime
 import psycopg2, psycopg2.extras
+import json
 
 app = Flask(__name__, static_url_path = "")
 
@@ -21,11 +22,11 @@ def create_task():
         
     conn = psycopg2.connect(database='d3fkm1msg7kiub',user='wdtetudvoejjev',password='b7fefda1a504e80018b763ba3d8bcb94804c54dfff9a3372b4a70ee042dadf22', host='ec2-54-83-1-94.compute-1.amazonaws.com')
     
-    for elemento in leer:
-        nom = request.json['Empresa']
-        suc = request.json['Sucursal']
-        fVig = request.json['fVigencia']
-        canpro = request.json['CantPrecio']
+    
+    nom = request.json["Empresa"]
+    suc = request.json["Sucursal"]
+    fVig = request.json["fVigencia"]
+    canpro = request.json["CantPrecio"]
     
     rec = conn.cursor()
     rec.execute("select codigo from Empresas where nombre = %s and sucursal = %s",(nom,suc))
