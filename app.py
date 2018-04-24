@@ -6,7 +6,6 @@ from datetime import datetime
 import psycopg2, psycopg2.extras
 
 app = Flask(__name__, static_url_path = "")
-conn = psycopg2.connect(database='d3fkm1msg7kiub',user='wdtetudvoejjev',password='b7fefda1a504e80018b763ba3d8bcb94804c54dfff9a3372b4a70ee042dadf22', host='ec2-54-83-1-94.compute-1.amazonaws.com')
 
 @app.errorhandler(404)
 def not_found(error):
@@ -19,6 +18,8 @@ def not_found(error):
 def create_task():
     if not request.json:
         abort(400)   
+        
+    conn = psycopg2.connect(database='d3fkm1msg7kiub',user='wdtetudvoejjev',password='b7fefda1a504e80018b763ba3d8bcb94804c54dfff9a3372b4a70ee042dadf22', host='ec2-54-83-1-94.compute-1.amazonaws.com')
     
     for elemento in leer:
         nom = request.json['Empresa']
@@ -53,10 +54,12 @@ def create_task():
             conn.rollback()
 
     cur.close()
+    
+    conn.close()
 
     return "hecho", 201
     
-conn.close()
+
 
 
 
