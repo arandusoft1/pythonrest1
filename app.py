@@ -15,7 +15,7 @@ def not_found(error):
 
 
 
-@app.route('/v1/tasks', methods = ['post'])
+@app.route('/v1/tasks', methods = ['POST'])
 def create_task():
     if not request.json:
         abort(400)   
