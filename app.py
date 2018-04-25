@@ -60,6 +60,19 @@ def not_found(error):
 def get_tasks():
     return jsonify({'tasks': tasks})
 
+@app.route('/todo/api/v1.0/tasks', methods=['POST'])
+def create_task():
+    if not request.json:
+        abort(400)
+    task = {
+        'id': request.json["Empresa"],
+        'title': request.json["Sucursal"],
+        'description': request.json["fVigencia"],
+        'done': request.json["CantPrecio"]
+    }
+    tasks.append(task)
+    return jsonify({'task': task}), 201
+
 if __name__ == '__main__':
     app.run(debug = True)
 
