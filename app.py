@@ -102,7 +102,7 @@ def get_task(task_id):
         abort(404)
     return jsonify({'task': task[0]})
 
-@app.route('/todo/api/v1.0/task', methods=['POST'])
+@app.route('/todo/api/v1.0/tasks', methods=['POST'])
 def create_task():
     if not request.json or not "title" in request.json:
         abort(400)
