@@ -48,6 +48,14 @@ def get_tasks():
 
 ######################################################################################################################################
 
+@app.route('/todo/api/v1.0/tasks/<str:task_nom>/<str:task_suc>', methods=['GET'])
+def get_task(task_nom, task_suc):
+    task = [task for task in tasks if task['Empresa'] == task_nom and task['Sucursal'] == task_suc]
+    if len(task) == 0:
+        abort(404)
+    return jsonify({'task': task[0]})
+
+######################################################################################################################################
 @app.route('/todo/api/v1.0/tasks', methods=['POST'])
 def create_task():
     if not request.json or not 'Empresa' in request.json or not 'Sucursal' in request.json or not 'fVigencia' in request.json or not 'CantPrecio' in request.json:
@@ -83,8 +91,8 @@ def create_task():
 
 #######################################################################################################################################
 
-@app.route('/todo/api/v1.0/tasks', methods=['PUT'])
-def update_task():
+@app.route('/todo/api/v1.0/tasks/<str:task_nom>/<str:task_suc>', methods=['PUT'])
+def update_task(task_nom,task_suc):
     if not request.json:
         abort(400)
     if 'fVigencia' in request.json and type(request.json['fVigencia']) != unicode:
@@ -92,8 +100,8 @@ def update_task():
     if 'CantPrecio' in request.json and type(request.json['CantPrecio']) != int:
         abort(400)
         
-    nom = request.json["Empresa"]
-    suc = request.json["Sucursal"]
+    nom = task_nom  #request.json["Empresa"]
+    suc = task_suc  #request.json["Sucursal"]
     
     task = [task for task in tasks if task['Empresa'] == nom and task['Sucursal'] == suc]
     
