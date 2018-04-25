@@ -22,7 +22,7 @@ tasks = {"Empresas":  empresas}
 conjson.close()    
 connjson.close()"""
 
-"""tasks = [
+tasks = [
     {
         "Empresa": "XX",
         "Sucursal": "Resistencia",
@@ -35,9 +35,9 @@ connjson.close()"""
         "fVigencia": "26/12/17 00:00:00",
         "CantPrecio": 80
     }
-]"""
+]
 
-tasks = [
+"""tasks = [
     {
         'id': 1,
         'title': u'Buy groceries',
@@ -50,7 +50,7 @@ tasks = [
         'description': u'Need to find a good Python tutorial on the web', 
         'done': False
     }
-]
+]"""
 
 @app.errorhandler(404)
 def not_found(error):
