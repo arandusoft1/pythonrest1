@@ -92,7 +92,6 @@ def create_task():
     
     if cod > 0:
         try:
-            #print 'Actualizado'
             cur.execute("update Empresas set fVigencia='%s', CantPrecio=%d where codigo=%d;" % (fVig,canpro,cod))
             conn.commit()
         except(Exception, psycopg2.DatabaseError) as error:
@@ -100,7 +99,6 @@ def create_task():
             conn.rollback()
     else:
         try:
-            #print 'Creado'
             cur.execute("insert into Empresas (nombre,Sucursal,fVigencia,CantPrecio) values ('%s','%s','%s',%d);" % (nom,suc,fVig,canpro))
             conn.commit()
         except:
