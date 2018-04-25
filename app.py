@@ -8,7 +8,7 @@ import json
 
 app = Flask(__name__, static_url_path = "")
 
-connjson = psycopg2.connect(database='d3fkm1msg7kiub',user='wdtetudvoejjev',password='b7fefda1a504e80018b763ba3d8bcb94804c54dfff9a3372b4a70ee042dadf22', host='ec2-54-83-1-94.compute-1.amazonaws.com')
+"""connjson = psycopg2.connect(database='d3fkm1msg7kiub',user='wdtetudvoejjev',password='b7fefda1a504e80018b763ba3d8bcb94804c54dfff9a3372b4a70ee042dadf22', host='ec2-54-83-1-94.compute-1.amazonaws.com')
 conjson = connjson.cursor()
 conjson.execute("select * from Empresas;")
 rowsjson = conjson.fetchall()
@@ -20,7 +20,22 @@ for row in rowsjson:
 tasks = {"Empresas":  empresas}
 
 conjson.close()    
-connjson.close()
+connjson.close()"""
+
+tasks = [
+    {
+        "Empresa": "XX",
+        "Sucursal": "Resistencia",
+        "fVigencia":  "02/10/10 18:24:00",     
+        "CantPrecio": 100
+    },     
+    {
+        "Empresa": "XY",
+        "Sucursal": "Corrientes",
+        "fVigencia": "26/12/17 00:00:00",
+        "CantPrecio": 80
+    }
+]
 
 
 @app.errorhandler(404)
@@ -29,7 +44,7 @@ def not_found(error):
 
 @app.route('/todo/api/v1.0/tasks', methods=['GET'])
 def get_tasks():
-    return jsonify({'tasks': Empresas})
+    return jsonify({'tasks': tasks})
 
 @app.route('/v1/tasks', methods = ['POST'])
 def create_task():
