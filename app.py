@@ -86,12 +86,13 @@ def create_task():
     cod = 0
     
     for row in rows:
-        cod = row[0]
+        cod = int(row[0])
     end
     
     rec.close()
     
     cur = conn.cursor()
+    
     
     if cod > 0:
         try:
