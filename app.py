@@ -48,12 +48,12 @@ def get_tasks():
 
 ######################################################################################################################################
 
-@app.route('/todo/api/v1.0/tasks/<str:task_nom>', methods=['GET'])
+"""@app.route('/todo/api/v1.0/tasks/<str:task_nom>', methods=['GET'])
 def get_task(task_nom):
     task = [task for task in tasks if task['Empresa'] == task_nom]
     if len(task) == 0:
         abort(404)
-    return jsonify({'task': task[0]})
+    return jsonify({'task': task[0]})"""
 
 ######################################################################################################################################
 @app.route('/todo/api/v1.0/tasks', methods=['POST'])
