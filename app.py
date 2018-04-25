@@ -67,15 +67,15 @@
 #Hasta aca lo mio
 
 #!flask/bin/python
-import bottle
+#import bottle
 from flask import Flask, jsonify
-from bottle import route,run,Bottle,template
-import json
+#from bottle import route,run,Bottle,template
+#import json
 
 
-bottle.debug(True)
+#bottle.debug(True)
 
-#app = Flask(__name__)
+app = Flask(__name__)
 
 tasks = [
     {
@@ -94,7 +94,7 @@ tasks = [
 
 @app.route('/todo/api/v1.0/tasks', methods=['GET'])
 def get_tasks():
-    return "hola"
+    return jsonify({'tasks': tasks})
 
 if __name__ == '__main__':
 	run(host='0.0.0.0',port=argv[1])
