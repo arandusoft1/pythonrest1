@@ -107,7 +107,7 @@ def update_task():
     task[0]['CantPrecio'] = request.json.get('CantPrecio', task[0]['CantPrecio'])    
     #task[0]['done'] = request.json.get('done', task[0]['done'])
     
-    fVig = task[0]['fVigencia']
+    """fVig = task[0]['fVigencia']
     canpro = task[0]['CantPrecio']  
     
     conn = psycopg2.connect(database='d3fkm1msg7kiub',user='wdtetudvoejjev',password='b7fefda1a504e80018b763ba3d8bcb94804c54dfff9a3372b4a70ee042dadf22', host='ec2-54-83-1-94.compute-1.amazonaws.com')
@@ -127,7 +127,7 @@ def update_task():
     except(Exception, psycopg2.DatabaseError) as error:
         conn.rollback()
         
-    conn.close()   
+    conn.close()"""   
     
     return jsonify({'task': task[0]})
 
