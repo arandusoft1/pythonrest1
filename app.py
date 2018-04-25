@@ -82,7 +82,7 @@ def create_task():
     }
     tasks.append(task)
     
-    rec = conn.cursor()
+    """rec = conn.cursor()
     rec.execute("select codigo from Empresas where nombre = %s and sucursal = %s",(nom,suc))
     rows = rec.fetchall()
 
@@ -110,7 +110,7 @@ def create_task():
 
     cur.close()
     
-    conn.close()
+    conn.close()"""
    
 
 #    return "hecho", 201
