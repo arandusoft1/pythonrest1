@@ -75,10 +75,10 @@ def create_task():
     #canpro = request.json["CantPrecio"]
     
      task = {                #hay que ver si se hace un update o post
-        'Empresa': request.json["Empresa"] #nom,
-        'Sucursal': request.json["Sucursal"]#suc,
-        'fVigencia': request.json["fVigencia"]#fVig,
-        'CantPrecio': request.json["CantPrecio"]#canpro
+        "Empresa": request.json["Empresa"] #nom,
+        "Sucursal": request.json["Sucursal"]#suc,
+        "fVigencia": request.json["fVigencia"]#fVig,
+        "CantPrecio": request.json["CantPrecio"]#canpro
     }
     tasks.append(task)
     
