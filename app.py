@@ -94,7 +94,7 @@ tasks = [
 
 @app.route('/todo/api/v1.0/tasks', methods=['GET'])
 def get_tasks():
-    return jsonify({'tasks': tasks})
+    return "hola"
 
 if __name__ == '__main__':
 	run(host='0.0.0.0',port=argv[1])
