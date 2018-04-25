@@ -48,9 +48,9 @@ def get_tasks():
 
 ######################################################################################################################################
 
-@app.route('/todo/api/v1.0/tasks/<str:task_nom>/<str:task_suc>', methods=['GET'])
-def get_task(task_nom, task_suc):
-    task = [task for task in tasks if task['Empresa'] == task_nom and task['Sucursal'] == task_suc]
+@app.route('/todo/api/v1.0/tasks/<str:task_nom>', methods=['GET'])
+def get_task(task_nom):
+    task = [task for task in tasks if task['Empresa'] == task_nom]
     if len(task) == 0:
         abort(404)
     return jsonify({'task': task[0]})
@@ -91,8 +91,8 @@ def create_task():
 
 #######################################################################################################################################
 
-@app.route('/todo/api/v1.0/tasks/<str:task_nom>/<str:task_suc>', methods=['PUT'])
-def update_task(task_nom,task_suc):
+@app.route('/todo/api/v1.0/tasks/<str:task_nom>', methods=['PUT'])
+def update_task(task_nom):
     if not request.json:
         abort(400)
     if 'fVigencia' in request.json and type(request.json['fVigencia']) != unicode:
@@ -101,7 +101,7 @@ def update_task(task_nom,task_suc):
         abort(400)
         
     nom = task_nom  #request.json["Empresa"]
-    suc = task_suc  #request.json["Sucursal"]
+    suc = request.json["Sucursal"]
     
     task = [task for task in tasks if task['Empresa'] == nom and task['Sucursal'] == suc]
     
