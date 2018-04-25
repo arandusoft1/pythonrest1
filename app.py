@@ -29,7 +29,7 @@ def not_found(error):
 
 @app.route('/todo/api/v1.0/tasks', methods=['GET'])
 def get_tasks():
-    return jsonify({'Empresas': tasks})
+    return jsonify({'tasks': Empresas})
 
 @app.route('/v1/tasks', methods = ['POST'])
 def create_task():
@@ -85,7 +85,7 @@ def create_task():
    
 
 #    return "hecho", 201
-    return jsonify({'Empresas': task})
+    return jsonify({'tasks': Empresas})
 
 if __name__ == '__main__':
     app.run(debug = True)
