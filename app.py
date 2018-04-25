@@ -82,11 +82,10 @@ def create_task():
     
     cur = conn.cursor()
     
-    try:
-        cur.execute("update Empresas set fVigencia='%s', CantPrecio=%d where codigo=%d;", (fVig,canpro,cod))
+    try:    
+        cur.execute("insert into Empresas (nombre,Sucursal,fVigencia,CantPrecio) values ('%s','%s','%s',%d);" % (nom,suc,fVig,canpro))
         conn.commit()
-    except(Exception, psycopg2.DatabaseError) as error:
-        print(error)
+    except:
         conn.rollback()
         
     cur.close()
