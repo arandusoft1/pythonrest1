@@ -60,7 +60,7 @@ def not_found(error):
 def get_tasks():
     return jsonify({'tasks': tasks})
 
-@app.route('/v1/tasks', methods = ['POST'])
+"""@app.route('/v1/tasks', methods = ['POST'])
 def create_task():
     if not request.json or not "Empresa" in request.json or not "Sucursal" in request.json or not "fVigencia" in request.json or not "CantPrecio" in request.json:
         abort(400)   
@@ -114,7 +114,7 @@ def create_task():
    
 
 #    return "hecho", 201
-    return jsonify({'tasks': Empresas})
+    return jsonify({'tasks': Empresas})"""
 
 if __name__ == '__main__':
     app.run(debug = True)
