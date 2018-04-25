@@ -69,49 +69,13 @@ def create_task():
     suc = request.json["Sucursal"]
     fVig = request.json["fVigencia"]
     canpro = request.json["CantPrecio"]
-    ## Desde aca agrego
     
-   """ conn = psycopg2.connect(database='d3fkm1msg7kiub',user='wdtetudvoejjev',password='b7fefda1a504e80018b763ba3d8bcb94804c54dfff9a3372b4a70ee042dadf22', host='ec2-54-83-1-94.compute-1.amazonaws.com')
-    
-    rec = conn.cursor()
-    rec.execute("select codigo from Empresas where nombre = %s and sucursal = %s",(nom,suc))
-    rows = rec.fetchall()
-
-    for row in rows:
-        cod = row[0]
-    
-    rec.close()
-    cur = conn.cursor()
-
-    if cod > 0:
-        try:
-            print 'Actualizado'
-            cur.execute("update Empresas set fVigencia='%s', CantPrecio=%d where codigo=%d;" % (fVig,canpro,cod))
-            conn.commit() 
-        except(Exception, psycopg2.DatabaseError) as error:
-            print(error)
-            conn.rollback()
-    else:
-        try:
-            print 'Creado'
-            cur.execute("insert into Empresas (nombre,Sucursal,fVigencia,CantPrecio) values ('%s','%s','%s',%d);" % (nom,suc,fVig,canpro))
-            conn.commit()
-        except:
-            conn.rollback()
-
-    cur.close()
-    conn.close()"""
-    ## Hasta aca agrego
-        
-        
     task = {
         'Empresa': nom,
         'Sucursal': suc,
         'fVigencia': fVig,
         'CantPrecio': canpro
     }
-    
-    
     
     tasks.append(task)
     return jsonify({'task': task}), 201
