@@ -83,6 +83,8 @@ def create_task():
     rec.execute("select codigo from Empresas where nombre = %s and sucursal = %s",(nom,suc))
     rows = rec.fetchall()
     
+    cod = 0
+    
     for row in rows:
         cod = row[0]
     
@@ -90,11 +92,21 @@ def create_task():
     
     cur = conn.cursor()
     
-    try:
-        cur.execute("insert into Empresas (nombre,Sucursal,fVigencia,CantPrecio) values ('%s','%s','%s',%d);" % (nom,suc,fVig,canpro))
-        conn.commit()
-    except:
-        conn.rollback()
+    if cod > 0:
+        try:
+            print 'Actualizado'
+            cur.execute("update Empresas set fVigencia='%s', CantPrecio=%d where codigo=%d;" % (fVig,canpro,cod))
+            conn.commit() 
+        except(Exception, psycopg2.DatabaseError) as error:
+            print(error)
+            conn.rollback()
+    else:
+        try:
+            print 'Creado'
+            cur.execute("insert into Empresas (nombre,Sucursal,fVigencia,CantPrecio) values ('%s','%s','%s',%d);" % (nom,suc,fVig,canpro))
+            conn.commit()
+        except:
+            conn.rollback()
             
     cur.close()
     conn.close()
