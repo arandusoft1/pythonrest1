@@ -14,7 +14,7 @@ conjson.execute("select * from Empresas;")
 rowsjson = conjson.fetchall()
 empresas= []
 
-for row in rows:
+for row in rowsjson:
     empresas.append({"Empresa": row[1],"Sucursal": row[2],"fVigencia": row[3],"CantPrecio": row[4]})
 
 tasks = {"Empresas":  empresas}
