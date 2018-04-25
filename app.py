@@ -84,7 +84,7 @@ def create_task():
 #######################################################################################################################################
 
 @app.route('/todo/api/v1.0/tasks', methods=['PUT'])
-def update_task(task_id):
+def update_task():
     if not request.json:
         abort(400)
     if 'fVigencia' in request.json and type(request.json['fVigencia']) != unicode:
