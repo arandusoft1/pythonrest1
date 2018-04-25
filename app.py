@@ -64,7 +64,14 @@ def get_tasks():
 def create_task():
     if not request.json: # or not "Empresa" in request.json or not "Sucursal" in request.json or not "fVigencia" in request.json or not "CantPrecio" in request.json:
         abort(400)   
-    
+    task = {
+        "Empresa": "PRueba",
+        "Sucursal": "Corrientes",
+        "fVigencia": "26/12/17 00:00:00",
+        "CantPrecio": 80
+    }
+    tasks.append(task)
+    return jsonify({'tasks': tasks}), 201
     #conn = psycopg2.connect(database='d3fkm1msg7kiub',user='wdtetudvoejjev',password='b7fefda1a504e80018b763ba3d8bcb94804c54dfff9a3372b4a70ee042dadf22', host='ec2-54-83-1-94.compute-1.amazonaws.com')
     
     
@@ -80,13 +87,6 @@ def create_task():
         "fVigencia": request.json["fVigencia"]#fVig,
         "CantPrecio": request.json["CantPrecio"]#canpro
     }"""
-    task = {
-        "Empresa": "PRueba",
-        "Sucursal": "Corrientes",
-        "fVigencia": "26/12/17 00:00:00",
-        "CantPrecio": 80
-    }
-    tasks.append(task)
     
     """rec = conn.cursor()
     rec.execute("select codigo from Empresas where nombre = %s and sucursal = %s",(nom,suc))
@@ -120,7 +120,7 @@ def create_task():
    
 
 #    return "hecho", 201
-    return jsonify({'tasks': tasks}), 201
+    
 
 if __name__ == '__main__':
     app.run(debug = True)
