@@ -60,7 +60,7 @@ def not_found(error):
 def get_tasks():
     return jsonify({'tasks': tasks})
 
-@app.route('/todo/api/v1.0/tasks', methods = ['POST'])
+"""@app.route('/todo/api/v1.0/tasks', methods = ['POST'])
 def create_task():
     if not request.json: # or not "Empresa" in request.json or not "Sucursal" in request.json or not "fVigencia" in request.json or not "CantPrecio" in request.json:
         abort(400)
@@ -72,7 +72,7 @@ def create_task():
         "CantPrecio": 80
     }
     tasks.append(task)
-    return jsonify({'task': task}), 201
+    return jsonify({'task': task}), 201"""
 
 
     #conn = psycopg2.connect(database='d3fkm1msg7kiub',user='wdtetudvoejjev',password='b7fefda1a504e80018b763ba3d8bcb94804c54dfff9a3372b4a70ee042dadf22', host='ec2-54-83-1-94.compute-1.amazonaws.com')
