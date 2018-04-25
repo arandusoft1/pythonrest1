@@ -67,9 +67,15 @@
 #Hasta aca lo mio
 
 #!flask/bin/python
+import bottle
 from flask import Flask, jsonify
+from bottle import route,run,Bottle,template
+import json
 
-app = Flask(__name__)
+
+bottle.debug(True)
+
+#app = Flask(__name__)
 
 tasks = [
     {
@@ -91,4 +97,4 @@ def get_tasks():
     return jsonify({'tasks': tasks})
 
 if __name__ == '__main__':
-    app.run(debug=True)
+	run(host='0.0.0.0',port=argv[1])
