@@ -64,12 +64,23 @@ def get_tasks():
 def create_task():
     if not request.json:
         abort(400)
+        
+    nom = request.json["Empresa"]
+    suc = request.json["Sucursal"]
+    fVig = request.json["fVigencia"]
+    canpro = request.json["CantPrecio"]
+    
+        
+        
     task = {
-        'Empresa': request.json["Empresa"],
-        'Sucursal': request.json["Sucursal"],
-        'fVigencia': request.json["fVigencia"],
-        'CantPrecio': request.json["CantPrecio"]
+        'Empresa': nom,
+        'Sucursal': suc,
+        'fVigencia': fVig,
+        'CantPrecio': canpro
     }
+    
+    
+    
     tasks.append(task)
     return jsonify({'task': task}), 201
 
