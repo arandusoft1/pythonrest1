@@ -88,28 +88,6 @@ def create_task():
     
     rec.close()
     
-    cur = conn.cursor()
-    
-    if cod > 0:
-        try:
-            print 'Actualizado'
-            cur.execute("update Empresas set fVigencia='%s', CantPrecio=%d where codigo=%d;" % (fVig,canpro,cod))
-            conn.commit()
-        except(Exception, psycopg2.DatabaseError) as error:
-            print(error)
-            conn.rollback()
-    else:
-        try:
-            print 'Creado'
-            cur.execute("insert into Empresas (nombre,Sucursal,fVigencia,CantPrecio) values ('%s','%s','%s',%d);" % (nom,suc,fVig,canpro))
-            conn.commit()
-        except:
-            conn.rollback()
-            
-    cur.close()
-    conn.close()
-    
-    
     return jsonify({'task': task}), 201
 
 if __name__ == '__main__':
