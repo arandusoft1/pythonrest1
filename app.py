@@ -116,4 +116,4 @@ def create_task():
     return jsonify({'task': task}), 201
 
 if __name__ == '__main__':
-	run(host='0.0.0.0',port=argv[1])
+    app.run(debug=True)
