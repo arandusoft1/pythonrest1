@@ -8,7 +8,7 @@ import json
 
 app = Flask(__name__, static_url_path = "")
 
-"""connjson = psycopg2.connect(database='d3fkm1msg7kiub',user='wdtetudvoejjev',password='b7fefda1a504e80018b763ba3d8bcb94804c54dfff9a3372b4a70ee042dadf22', host='ec2-54-83-1-94.compute-1.amazonaws.com')
+connjson = psycopg2.connect(database='d3fkm1msg7kiub',user='wdtetudvoejjev',password='b7fefda1a504e80018b763ba3d8bcb94804c54dfff9a3372b4a70ee042dadf22', host='ec2-54-83-1-94.compute-1.amazonaws.com')
 conjson = connjson.cursor()
 conjson.execute("select * from Empresas;")
 rowsjson = conjson.fetchall()
@@ -17,12 +17,12 @@ empresas= []
 for row in rowsjson:
     empresas.append({"Empresa": row[1],"Sucursal": row[2],"fVigencia": row[3],"CantPrecio": row[4]})
 
-tasks = {"Empresas":  empresas}
+tasks = empresas
 
 conjson.close()    
-connjson.close()"""
+connjson.close()
 
-tasks = [
+"""tasks = [
     {
         "Empresa": "XX",
         "Sucursal": "Resistencia",
@@ -37,7 +37,7 @@ tasks = [
     }
 ]
 
-"""tasks = [
+tasks = [
     {
         'id': 1,
         'title': u'Buy groceries',
