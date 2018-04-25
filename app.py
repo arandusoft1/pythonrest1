@@ -35,34 +35,22 @@ connjson.close()
         "fVigencia": "26/12/17 00:00:00",
         "CantPrecio": 80
     }
-]
-
-tasks = [
-    {
-        'id': 1,
-        'title': u'Buy groceries',
-        'description': u'Milk, Cheese, Pizza, Fruit, Tylenol', 
-        'done': False
-    },
-    {
-        'id': 2,
-        'title': u'Learn Python',
-        'description': u'Need to find a good Python tutorial on the web', 
-        'done': False
-    }
 ]"""
 
 @app.errorhandler(404)
 def not_found(error):
     return make_response(jsonify( { 'error': 'Not found' } ), 404)
+#####################################################################################################################################
 
 @app.route('/todo/api/v1.0/tasks', methods=['GET'])
 def get_tasks():
     return jsonify({'tasks': tasks})
 
+######################################################################################################################################
+
 @app.route('/todo/api/v1.0/tasks', methods=['POST'])
 def create_task():
-    if not request.json:
+    if not request.json or not 'Empresa' in request.json or not 'Sucursal' in request.json or not 'fVigencia' in request.json or not 'CantPrecio' in request.json:
         abort(400)
         
     nom = request.json["Empresa"]
@@ -92,6 +80,58 @@ def create_task():
     conn.close()
     
     return jsonify({'task': task}), 201
+
+#######################################################################################################################################
+
+@app.route('/todo/api/v1.0/tasks', methods=['PUT'])
+def update_task(task_id):
+    if not request.json:
+        abort(400)
+    if 'fVigencia' in request.json and type(request.json['fVigencia']) != unicode:
+        abort(400)
+    if 'CantPrecio' in request.json and type(request.json['CantPrecio']) != int:
+        abort(400)
+        
+    nom = request.json["Empresa"]
+    suc = request.json["Sucursal"]
+    
+    task = [task for task in tasks if task['Empresa'] == nom and task['Sucursal'] == suc]
+    
+    if len(task) == 0:
+        abort(404)
+        
+    #if 'done' in request.json and type(request.json['done']) is not bool:
+    #    abort(400)
+        
+    task[0]['fVigencia'] = request.json.get('fVigencia', task[0]['fVigencia'])    
+    task[0]['CantPrecio'] = request.json.get('CantPrecio', task[0]['CantPrecio'])    
+    #task[0]['done'] = request.json.get('done', task[0]['done'])
+    
+    fVig = task[0]['fVigencia']
+    canpro = task[0]['CantPrecio']  
+    
+    conn = psycopg2.connect(database='d3fkm1msg7kiub',user='wdtetudvoejjev',password='b7fefda1a504e80018b763ba3d8bcb94804c54dfff9a3372b4a70ee042dadf22', host='ec2-54-83-1-94.compute-1.amazonaws.com')
+    
+    rec = conn.cursor()
+    rec.execute("select codigo from Empresas where nombre = %s and sucursal = %s",(nom,suc))
+    rows = rec.fetchall()
+
+    for row in rows:
+        cod = row[0]
+    
+    rec.close()
+    
+    try:
+        cur.execute("update Empresas set fVigencia='%s', CantPrecio=%d where codigo=%d;" % (fVig,canpro,cod))
+        conn.commit() 
+    except(Exception, psycopg2.DatabaseError) as error:
+        conn.rollback()
+        
+    conn.close()   
+    
+    return jsonify({'task': task[0]})
+
+#######################################################################################################################################
 
 if __name__ == '__main__':
     app.run(debug = True)
