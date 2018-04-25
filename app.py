@@ -65,10 +65,10 @@ def create_task():
     if not request.json:
         abort(400)
     task = {
-        'id': request.json["Empresa"],
-        'title': request.json["Sucursal"],
-        'description': request.json["fVigencia"],
-        'done': request.json["CantPrecio"]
+        'Empresa': request.json["Empresa"],
+        'Sucursal': request.json["Sucursal"],
+        'fVigencia': request.json["fVigencia"],
+        'CantPrecio': request.json["CantPrecio"]
     }
     tasks.append(task)
     return jsonify({'task': task}), 201
