@@ -61,7 +61,7 @@ def index():
 				d2 = d1
 				ultact = row[3]
 				
-	d1 = datetime.strptime(ultact,fmt) #Ultima vigencia
+	"""d1 = datetime.strptime(ultact,fmt) #Ultima vigencia
 	cont = 0
 				
 	
@@ -80,7 +80,7 @@ def index():
                 else:
                     	empresas[cont]["color"] = "A"
 		
-		cont = cont + 1
+		cont = cont + 1"""
                   
                    
 	 
