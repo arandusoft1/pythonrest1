@@ -14,7 +14,7 @@
 				color: #000;
 			}           
 			th {
-				text-align: center;
+				text-align: center;;
 			}
 			table .rojo {
 				background-color:#bf5858;
