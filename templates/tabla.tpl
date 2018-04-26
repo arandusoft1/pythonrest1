@@ -57,7 +57,7 @@
              % fmt = '%d/%m/%y %H:%M:%S'
              % d1 = datetime.strptime(ultact,fmt) #Ultima vigencia
              
-            %for elemento in Empresas:
+            %for elemento in empresas:
                 
                
                 % eltoVigencia = elemento.fVigencia                
@@ -72,7 +72,7 @@
                         <td>{{elemento.fVigencia}}</td> 
                         <td>{{elemento.CantPrecio}}</td> 
                     </tr>
-                %elif elemento.fVigencia == ultVigencia:
+                %elif elemento.fVigencia == ultact:
                     <tr class="verde">
                         <td>{{elemento.Empresa}}</td> 
                         <td>{{elemento.Sucursal}}</td> 
