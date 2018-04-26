@@ -36,7 +36,19 @@ def not_found(error):
 @app.route('/index')
 @app.route('/')
 def index():
-	conn = psycopg2.connect(database='d3fkm1msg7kiub',user='wdtetudvoejjev',password='b7fefda1a504e80018b763ba3d8bcb94804c54dfff9a3372b4a70ee042dadf22', host='ec2-54-83-1-94.compute-1.amazonaws.com')
+	
+	user = {'username': 'Miguel'}
+	return '''
+<html>
+    <head>
+        <title>Home Page - Microblog</title>
+    </head>
+    <body>
+        <h1>Hello, ''' + user['username'] + '''!</h1>
+    </body>
+</html>'''
+
+	"""conn = psycopg2.connect(database='d3fkm1msg7kiub',user='wdtetudvoejjev',password='b7fefda1a504e80018b763ba3d8bcb94804c54dfff9a3372b4a70ee042dadf22', host='ec2-54-83-1-94.compute-1.amazonaws.com')
 	con = conn.cursor()
 	con.execute("select * from Empresas;")
 	rows = con.fetchall()
@@ -72,7 +84,7 @@ def index():
 
 	#leer = json.loads(open('locales.json').read())	
 	return render_template('tabla.tpl', leer=leer)
-	##return template('tabla.tpl', leer)
+	##return template('tabla.tpl', leer)"""
 #####################################################################################################################################
 
 @app.route('/todo/api/v1.0/tasks', methods=['GET'])
