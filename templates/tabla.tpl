@@ -53,7 +53,7 @@
                 <th>Cantidad de Precios</th>
             </tr>
                         
-            {% for elemento in Empresas: %}
+            {% for elemento in empresas: %}
                      
                 {% if elemento['color'] == "R": %} 
                     <tr class="rojo">
