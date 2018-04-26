@@ -74,20 +74,13 @@ def index():
 		
 		if diffseg > 24 or diffdias > 0 :
 			empresas[cont]["color"] = "R"
-                       
-                elif eltoVigencia == ultact:
-                   	empresas[cont]["color"] = "V"                                
-                else:
-                    	empresas[cont]["color"] = "A"
-		end
-		
+		elif eltoVigencia == ultact:
+			empresas[cont]["color"] = "V"
+		else:
+			empresas[cont]["color"] = "A"
+			
 		cont = cont + 1
-	end
-                  
-                   
-	 
-	
-	
+		
 	#return repr(fvig)
 	
 	##leer = {"Empresas":  empresas , "UltAct": [{"fVigencia": ultact }]}		
