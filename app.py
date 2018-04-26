@@ -56,6 +56,15 @@ def get_task(task_nom):
     return jsonify({'task': task})
 
 ######################################################################################################################################
+
+@app.route('/todo/api/v1.0/tasks/<task_nom>/<task_suc>', methods=['GET'])
+def get_task(task_nom):
+    task = [task for task in tasks if task['Empresa'] == task_nom and task['Sucursal'] == task_suc ]
+    if len(task) == 0:
+        abort(404)
+    return jsonify({'task': task[0]})
+
+######################################################################################################################################
 @app.route('/todo/api/v1.0/tasks', methods=['POST'])
 def create_task():
     if not request.json or not 'Empresa' in request.json or not 'Sucursal' in request.json or not 'fVigencia' in request.json or not 'CantPrecio' in request.json:
