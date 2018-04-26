@@ -58,7 +58,7 @@ def get_task(task_nom):
 ######################################################################################################################################
 
 @app.route('/todo/api/v1.0/tasks/<task_nom>/<task_suc>', methods=['GET'])
-def get_task(task_nom):
+def get_task(task_nom, task_suc):
     task = [task for task in tasks if task['Empresa'] == task_nom and task['Sucursal'] == task_suc ]
     if len(task) == 0:
         abort(404)
