@@ -58,34 +58,6 @@ def index():
 				d2 = d1
 				ultact = row[3]
 	
-	"""cont = 0
-	fmt = '%d/%m/%y %H:%M:%S'
-	d1 = datetime.strptime(ultact,fmt) #Ultima vigencia
-	
-	for elemento in empresas:
-		
-		eltoVigencia = elemento['fVigencia']                
-		d2 = datetime.strptime(eltoVigencia,fmt)   #Elemento vigencia
-		diffseg= ((d1-d2).seconds)/3600.0  
-		diffdias= (d1-d2).days
-                
-		if diffseg > 24 or diffdias > 0 :
-			empresas[cont]["color"] = "R"
-                elif  eltoVigencia == ultact:
-	    		empresas[cont]["color"] = "V"                           
-               	else:
-	    		empresas[cont]["color"] = "A"                     
-		
-		
-		cont = cont + 1"""
-	
-		
-		
-				
-			
-
-			
-	
 	#return repr(fvig)
 	
 	##leer = {"Empresas":  empresas , "UltAct": [{"fVigencia": ultact }]}		
