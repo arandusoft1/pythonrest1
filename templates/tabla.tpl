@@ -57,7 +57,7 @@
 			{% for elemento in empresas: %}	
 			
 				
-				{% if elemento['color'] = "R": %}
+				
 					<tr class="rojo">
 						<td>{{elemento['Empresa']}}</td> 
 						<td>{{elemento['Sucursal']}}</td> 
@@ -65,7 +65,7 @@
 						<td>{{elemento['CantPrecio']}}</td> 
 					</tr>
 				
-				{% endif %}			
+							
 
 			{% endfor %}
 
