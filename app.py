@@ -104,15 +104,18 @@ def create_task():
 def update_task(task_nom):
     if not request.json:
         abort(400)
-    """if 'fVigencia' in request.json and type(request.json['fVigencia']) != unicode:
+    if 'fVigencia' in request.json and type(request.json['fVigencia']) != unicode:
         abort(400)
     if 'CantPrecio' in request.json and type(request.json['CantPrecio']) != int:
-        abort(400)"""
+        abort(400)
+    if not 'Sucursal' in request.json:
+        abort(400)
+        
         
     nom = task_nom  #request.json["Empresa"]
-    #suc = request.json["Sucursal"]
+    suc = request.json["Sucursal"]
     
-    task = [task for task in tasks if task['Empresa'] == nom ]  #and task['Sucursal'] == suc )]
+    task = [task for task in tasks if ( task['Empresa'] == nom and task['Sucursal'] == suc )]
     
     if len(task) == 0:
         abort(404)
