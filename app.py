@@ -65,7 +65,7 @@ def index():
 	cont = 0	
 	
 	for elemento in empresas:
-		empresas[cont]["color"] = "A"
+		empresas[cont]["color"] = "V"
 		cont = cont + 1
 		
 	#return repr(fvig)
