@@ -67,7 +67,7 @@ def index():
 			
 	
 	#return repr(fvig)
-	fmt = '%d/%m/%y %H:%M:%S
+	fmt = '%d/%m/%y %H:%M:%S'
 	leer = {"Empresas":  empresas , "UltAct": [{"fVigencia": ultact }]}		
 	
 	#leer = json.loads(open('locales.json').read())	
