@@ -53,19 +53,10 @@
 			<th>Cantidad de Precios</th>
 		</tr>          
 		
-		{% from datetime import datetime %}
-		{% fmt = '%d/%m/%y %H:%M:%S' %}
-		{% d1 = datetime.strptime(ultact,fmt) #Ultima vigencia %}
-		
+				
 		{% for elemento in empresas: %}
 
                
-			{% eltoVigencia = elemento['fVigencia'] %}                
-			{% d2=datetime.strptime(eltoVigencia,fmt)   #Elemento vigencia %}
-			{% diffseg= ((d1-d2).seconds)/3600.0 %}  
-			{% diffdias= (d1-d2).days %}
-
-			{% if diffseg > 24 or diffdias > 0: %}
 				<tr class="rojo">
 					<td>{{elemento['Empresa']}}</td> 
 					<td>{{elemento['Sucursal']}}</td> 
@@ -73,7 +64,7 @@
 					<td>{{elemento['CantPrecio']}}</td> 
 				</tr>
 
-			{% endif %}   
+			   
                         
 		{% endfor %}
             
