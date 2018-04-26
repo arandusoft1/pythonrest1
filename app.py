@@ -68,7 +68,8 @@ def index():
 				
 		if elemento["fVigencia"] == ultact:
 			empresas[cont]["color"] = "V"
-		
+		else 
+			empresas[cont]["color"] = "R"
 		cont = cont + 1
 		
 		
