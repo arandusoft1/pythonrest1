@@ -53,24 +53,32 @@
 				<th>Cantidad de Precios</th>
 			</tr>          
 
-
-
-			{% from datetime import datetime %}
-			{% d1 = datetime.strptime(ultact,fmt) %}
 			
-			{% for elemento in empresas: %}
-		
+			{% for elemento in empresas: %}	
 			
-
-
-				<tr class="rojo">
-					<td>{{elemento['Empresa']}}</td> 
-					<td>{{elemento['Sucursal']}}</td> 
-					<td>{{elemento['fVigencia']}}</td> 
-					<td>{{elemento['CantPrecio']}}</td> 
-				</tr>
-
-
+				col = elemento['color']
+				{% if col = R: %}
+					<tr class="rojo">
+						<td>{{elemento['Empresa']}}</td> 
+						<td>{{elemento['Sucursal']}}</td> 
+						<td>{{elemento['fVigencia']}}</td> 
+						<td>{{elemento['CantPrecio']}}</td> 
+					</tr>
+				{% elif col = V: %}
+					<tr class="verde">
+						<td>{{elemento['Empresa']}}</td> 
+						<td>{{elemento['Sucursal']}}</td> 
+						<td>{{elemento['fVigencia']}}</td> 
+						<td>{{elemento['CantPrecio']}}</td> 
+					</tr>				
+				{% else: %}
+					<tr class="verde">
+						<td>{{elemento['Empresa']}}</td> 
+						<td>{{elemento['Sucursal']}}</td> 
+						<td>{{elemento['fVigencia']}}</td> 
+						<td>{{elemento['CantPrecio']}}</td> 
+					</tr>
+				{% endif %}			
 
 			{% endfor %}
 
