@@ -55,8 +55,6 @@
 
 
 
-	   	
-	    	{% d1 = datetime.strptime(ultact,fmt) #Ultima vigencia %}
 		
 		{% for elemento in empresas: %}
 		
