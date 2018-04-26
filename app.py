@@ -104,8 +104,8 @@ def create_task():
 def update_task(): #task_nom):
     if not request.json:
         abort(400)
-    if 'fVigencia' in request.json and type(request.json['fVigencia']) != unicode:
-        abort(400)
+    """if 'fVigencia' in request.json and type(request.json['fVigencia']) != unicode:
+        abort(400)"""
     if 'CantPrecio' in request.json and type(request.json['CantPrecio']) != int:
         abort(400)
     if not 'Sucursal' in request.json or not 'Empresa' in request.json :
