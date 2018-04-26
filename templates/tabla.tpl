@@ -8,7 +8,7 @@
     	<body bgcolor=#f1f1c1>
     
         
-		%for elemento in empresas:
+		{% for elemento in empresas: %}
                 
                
 				<div>{{elemento['Empresa']}}</div> 
@@ -17,7 +17,7 @@
 				<div>{{elemento['CantPrecio']}}</div> 
 			   
                         
-            	%endfor 
+            	{% endfor %}
             
         
 
