@@ -91,7 +91,7 @@ def create_task():
 
 #######################################################################################################################################
 
-@app.route('/todo/api/v1.0/tasks/<str:task_nom>', methods=['PUT'])
+@app.route('/todo/api/v1.0/tasks/<task_nom>', methods=['PUT'])
 def update_task(task_nom):
     if not request.json:
         abort(400)
