@@ -68,11 +68,10 @@ def index():
 	
 	#return repr(fvig)
 	
-	leer = {"Empresas":  empresas , "UltAct": [{"fVigencia": ultact }]}
-		
-	user = {'username': 'Miguel'} 
+	leer = {"Empresas":  empresas , "UltAct": [{"fVigencia": ultact }]}		
+	
 	#leer = json.loads(open('locales.json').read())	
-	return render_template('tabla.tpl', user=user )
+	return render_template('tabla.tpl', ultact=ultact, empresas=empresas )
 	##return template('tabla.tpl', leer)
 #####################################################################################################################################
 
