@@ -64,20 +64,7 @@
 						<td>{{elemento['fVigencia']}}</td> 
 						<td>{{elemento['CantPrecio']}}</td> 
 					</tr>
-				{% elif  elemento['color'] = "V": %}
-					<tr class="verde">
-						<td>{{elemento['Empresa']}}</td> 
-						<td>{{elemento['Sucursal']}}</td> 
-						<td>{{elemento['fVigencia']}}</td> 
-						<td>{{elemento['CantPrecio']}}</td> 
-					</tr>				
-				{% else: %}
-					<tr class="verde">
-						<td>{{elemento['Empresa']}}</td> 
-						<td>{{elemento['Sucursal']}}</td> 
-						<td>{{elemento['fVigencia']}}</td> 
-						<td>{{elemento['CantPrecio']}}</td> 
-					</tr>
+				
 				{% endif %}			
 
 			{% endfor %}
