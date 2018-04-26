@@ -91,7 +91,7 @@ def index():
 
 @app.route('/empresas', methods=['GET'])
 def get_tasks():
-    return jsonify({'tasks': tasks})
+    return jsonify({'Empresas': tasks})
 
 ######################################################################################################################################
 
