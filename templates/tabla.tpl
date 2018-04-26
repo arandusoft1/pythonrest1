@@ -73,7 +73,7 @@
                         <td>{{elemento.fVigencia}}</td> 
                         <td>{{elemento.CantPrecio}}</td> 
                     </tr>
-                %elif elemento['fVigencia'] == UltAct[0]['fVigencia']:
+                %elif elemento.fVigencia == UltAct:
                     <tr class="verde">
                         <td>{{elemento.Empresa}}</td> 
                         <td>{{elemento.Sucursal}}</td> 
