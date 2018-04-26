@@ -91,7 +91,7 @@ def index():
 	##leer = {"Empresas":  empresas , "UltAct": [{"fVigencia": ultact }]}		
 	
 	#leer = json.loads(open('locales.json').read())	
-	return render_template('tabla.tpl', ultact=ultact, empresas=empresas)
+	return render_template('tabla.tpl', ultact=ultact)
 	##return template('tabla.tpl', leer)
 #####################################################################################################################################
 
