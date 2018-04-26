@@ -135,7 +135,7 @@ def update_task(task_nom):
     cur = conn.cursor()        
     
     try:
-        cur.execute("update Empresas set fVigencia='%s', CantPrecio=%d where nombre=%s and sucursal = %s ;" % (fVig,canpro,nom,suc))
+        cur.execute("update Empresas set fVigencia='%s', CantPrecio=%d where nombre='%s' and sucursal ='%s' ;" % (fVig,canpro,nom,suc))
         conn.commit() 
     except(Exception, psycopg2.DatabaseError) as error:
         conn.rollback()
