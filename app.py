@@ -1,10 +1,12 @@
 # -*- coding: UTF-8 -*-
 
-from flask import Flask, jsonify, abort, request, make_response, url_for
+from flask import Flask, jsonify, abort, request, make_response, url_for, render_template
 from flask_httpauth import HTTPBasicAuth
 from datetime import datetime
 import psycopg2, psycopg2.extras
 import json
+from pythonrest1 import pythonrest1
+
 
 app = Flask(__name__, static_url_path = "")
 
@@ -22,24 +24,53 @@ tasks = empresas
 conjson.close()    
 connjson.close()
 
-"""tasks = [
-    {
-        "Empresa": "XX",
-        "Sucursal": "Resistencia",
-        "fVigencia":  "02/10/10 18:24:00",     
-        "CantPrecio": 100
-    },     
-    {
-        "Empresa": "XY",
-        "Sucursal": "Corrientes",
-        "fVigencia": "26/12/17 00:00:00",
-        "CantPrecio": 80
-    }
-]"""
+#####################################################################################################################################
 
 @app.errorhandler(404)
 def not_found(error):
     return make_response(jsonify( { 'error': 'Not found' } ), 404)
+
+#####################################################################################################################################
+
+@app.route('/')
+def index():
+	conn = psycopg2.connect(database='d3fkm1msg7kiub',user='wdtetudvoejjev',password='b7fefda1a504e80018b763ba3d8bcb94804c54dfff9a3372b4a70ee042dadf22', host='ec2-54-83-1-94.compute-1.amazonaws.com')
+	con = conn.cursor()
+	con.execute("select * from Empresas;")
+	rows = con.fetchall()
+	empresas= []
+	fmt = '%d/%m/%y %H:%M:%S'
+	ultact = "01/01/01 00:00:00"
+	d2 = datetime.strptime(ultact,fmt)	
+	
+	for row in rows:
+		empresas.append({"Empresa": row[1],"Sucursal": row[2],"fVigencia": row[3],"CantPrecio": row[4]})
+		#fvig.append({"fVigencia": row[3]})
+		d1 = datetime.strptime(row[3],fmt)		
+		diffhora= ((d1-d2).seconds)/3600.0
+		diffdias= (d1-d2).days
+		
+		if diffdias > 0:
+			d2 = d1
+			ultact = row[3]
+		elif diffdias == 0:
+			if diffhora > 0:
+				d2 = d1
+				ultact = row[3]
+		
+				
+			
+
+			
+	
+	#return repr(fvig)
+	
+	leer = {"Empresas":  empresas , "UltAct": [{"fVigencia": ultact }]}
+		
+
+	#leer = json.loads(open('locales.json').read())	
+    return render_template('tabla.tpl', leer)
+	##return template('tabla.tpl', leer)
 #####################################################################################################################################
 
 @app.route('/todo/api/v1.0/tasks', methods=['GET'])
