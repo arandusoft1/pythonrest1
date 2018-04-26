@@ -89,13 +89,13 @@ def index():
 	##return template('tabla.tpl', leer)
 #####################################################################################################################################
 
-@app.route('/todo/api/v1.0/tasks', methods=['GET'])
+@app.route('/empresas', methods=['GET'])
 def get_tasks():
     return jsonify({'tasks': tasks})
 
 ######################################################################################################################################
 
-@app.route('/todo/api/v1.0/tasks/<task_nom>', methods=['GET'])
+@app.route('/empresas/<task_nom>', methods=['GET'])
 def get_task(task_nom):
     task = [task for task in tasks if task['Empresa'] == task_nom]
     if len(task) == 0:
@@ -112,7 +112,7 @@ def get_task(task_nom, task_suc):
     return jsonify({'task': task[0]})"""
 
 ######################################################################################################################################
-@app.route('/todo/api/v1.0/tasks', methods=['POST'])
+@app.route('/empresas', methods=['POST'])
 def create_task():
     if not request.json or not 'Empresa' in request.json or not 'Sucursal' in request.json or not 'fVigencia' in request.json or not 'CantPrecio' in request.json:
         abort(400)
@@ -147,7 +147,7 @@ def create_task():
 
 #######################################################################################################################################
 
-@app.route('/todo/api/v1.0/tasks', methods=['PUT'])   # original /<task_nom>', methods=['PUT'])
+@app.route('/empresas', methods=['PUT'])   # original /<task_nom>', methods=['PUT'])
 def update_task(): #task_nom):
     if not request.json:
         abort(400)
@@ -191,7 +191,7 @@ def update_task(): #task_nom):
     return jsonify({'task': task[0]})
 #######################################################################################################################################
 
-@app.route('/todo/api/v1.0/tasks/<task_nom>', methods=['DELETE'])
+@app.route('/empresas/<task_nom>', methods=['DELETE'])
 def delete_task(task_nom):
     task = [task for task in tasks if task['Empresa'] == task_nom]
     if len(task) == 0:
