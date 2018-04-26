@@ -11,10 +11,10 @@
 		%for elemento in empresas:
                 
                
-				<div>{{elemento.Empresa}}</div> 
-				<div>{{elemento.Sucursal}}</div>
-				<div>{{elemento.fVigencia}}</div>
-				<div>{{elemento.CantPrecio}}</div> 
+				<div>{{elemento['Empresa]}}</div> 
+				<div>{{elemento['Sucursal]}}</div>
+				<div>{{elemento['fVigencia]}}</div>
+				<div>{{elemento['CantPrecio]}}</div> 
 			   
                         
             	%endfor 
