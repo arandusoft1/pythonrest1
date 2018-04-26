@@ -77,7 +77,7 @@ def index():
 			if eltoVigencia == ultact:
 				empresas[cont]["color"] = "V"
 			else:
-				empresas[cont]["color"] = "A
+				empresas[cont]["color"] = "A"
 		
 		cont = cont + 1
 		
