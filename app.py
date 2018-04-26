@@ -72,7 +72,7 @@ def index():
 		
 
 	#leer = json.loads(open('locales.json').read())	
-	return render_template('tabla.tpl', leer=leer)
+	return render_template('tabla.tpl', Empresas = empresas, UltAct=ultact)
 	##return template('tabla.tpl', leer)
 #####################################################################################################################################
 
