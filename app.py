@@ -60,13 +60,36 @@ def index():
 			if diffhora > 0:
 				d2 = d1
 				ultact = row[3]
+				
+	d1 = datetime.strptime(ultact,fmt) #Ultima vigencia
+	cont = 0
+				
+	
+	for elemento in empresas:
+		
+		eltoVigencia = elemento['fVigencia']                
+                d2=datetime.strptime(eltoVigencia,fmt)   #Elemento vigencia
+                diffseg= ((d1-d2).seconds)/3600.0  
+                diffdias= (d1-d2).days
+		
+		if diffseg > 24 or diffdias > 0 :
+			a[cont]["color"] = "R"
+                       
+                elif elemento['fVigencia'] == UltAct[0]['fVigencia']:
+                   	a[cont]["color"] = "V"                                
+                else:
+                    	a[cont]["color"] = "A"
+                  
+                end   
+	end 
+	
 	
 	#return repr(fvig)
 	
 	##leer = {"Empresas":  empresas , "UltAct": [{"fVigencia": ultact }]}		
 	
 	#leer = json.loads(open('locales.json').read())	
-	return render_template('tabla.tpl', ultact=ultact)
+	return render_template('tabla.tpl', ultact=ultact,empresas=empresas)
 	##return template('tabla.tpl', leer)
 #####################################################################################################################################
 
