@@ -56,15 +56,15 @@
 			
 			{% for elemento in empresas: %}	
 			
-				col = elemento['color']
-				{% if col = "R": %}
+				
+				{% if elemento['color'] = "R": %}
 					<tr class="rojo">
 						<td>{{elemento['Empresa']}}</td> 
 						<td>{{elemento['Sucursal']}}</td> 
 						<td>{{elemento['fVigencia']}}</td> 
 						<td>{{elemento['CantPrecio']}}</td> 
 					</tr>
-				{% elif col = "V": %}
+				{% elif  elemento['color'] = "V": %}
 					<tr class="verde">
 						<td>{{elemento['Empresa']}}</td> 
 						<td>{{elemento['Sucursal']}}</td> 
