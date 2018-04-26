@@ -73,12 +73,12 @@ def index():
                 diffdias= (d1-d2).days
 		
 		if diffseg > 24 or diffdias > 0 :
-			a[cont]["color"] = "R"
+			empresas[cont]["color"] = "R"
                        
                 elif elemento['fVigencia'] == UltAct[0]['fVigencia']:
-                   	a[cont]["color"] = "V"                                
+                   	empresas[cont]["color"] = "V"                                
                 else:
-                    	a[cont]["color"] = "A"
+                    	empresas[cont]["color"] = "A"
 		
 		cont = cont + 1
                   
