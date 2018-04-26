@@ -61,7 +61,7 @@ def index():
 				d2 = d1
 				ultact = row[3]
 				
-	#da1 = datetime.strptime(ultact,fmt) 
+	da1 = datetime.strptime(ultact,fmt) 
 	cont = 0	
 	
 	for elemento in empresas:
