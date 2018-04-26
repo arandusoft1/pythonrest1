@@ -45,18 +45,7 @@
 	</head>
 	<body bgcolor=#f1f1c1>
 
-		<table style="width:80%" align="center">
-			<tr>
-				<th>Empresa</th>
-				<th>Sucursal</th> 
-				<th>Fecha de Vigencia</th>
-				<th>Cantidad de Precios</th>
-			</tr>          
-
-			
-			
-
-		</table>
+		
 
 	</body>
 </html>
