@@ -100,28 +100,25 @@ def create_task():
 
 #######################################################################################################################################
 
-@app.route('/todo/api/v1.0/tasks/<task_nom>', methods=['PUT'])
-def update_task(task_nom):
+@app.route('/todo/api/v1.0/tasks, methods=['PUT'])   # original /<task_nom>', methods=['PUT'])
+def update_task(): #task_nom):
     if not request.json:
         abort(400)
     if 'fVigencia' in request.json and type(request.json['fVigencia']) != unicode:
         abort(400)
     if 'CantPrecio' in request.json and type(request.json['CantPrecio']) != int:
         abort(400)
-    if not 'Sucursal' in request.json:
+    if not 'Sucursal' in request.json or not 'Empresa' in request.json :
         abort(400)
         
         
-    nom = task_nom  #request.json["Empresa"]
+    nom = request.json["Empresa"] ## original task_nom
     suc = request.json["Sucursal"]
     
     task = [task for task in tasks if ( task['Empresa'] == nom and task['Sucursal'] == suc )]
     
     if len(task) == 0:
         abort(404)
-        
-    #if 'done' in request.json and type(request.json['done']) is not bool:
-    #    abort(400)
         
     task[0]['fVigencia'] = request.json.get('fVigencia', task[0]['fVigencia'])    
     task[0]['CantPrecio'] = request.json.get('CantPrecio', task[0]['CantPrecio'])    
@@ -161,57 +158,3 @@ if __name__ == '__main__':
     app.run(debug = True)
 
 #Hasta aca lo mio
-
-#desde aca la prueba
-"""from flask import Flask, jsonify
-from flask import abort, make_response, request
-
-app = Flask(__name__)
-
-@app.errorhandler(404)
-def not_found(error):
-    return make_response(jsonify({'error': 'Not found'}), 404)
-
-tasks = [
-    {
-        'id': 1,
-        'title': u'Buy groceries',
-        'description': u'Milk, Cheese, Pizza, Fruit, Tylenol', 
-        'done': False
-    },
-    {
-        'id': 2,
-        'title': u'Learn Python',
-        'description': u'Need to find a good Python tutorial on the web', 
-        'done': False
-    }
-]
-
-@app.route('/todo/api/v1.0/tasks', methods=['GET'])
-def get_tasks():
-    return jsonify({'tasks': tasks})
-
-@app.route('/todo/api/v1.0/tasks/<int:task_id>', methods=['GET'])
-def get_task(task_id):
-    task = [task for task in tasks if task['id'] == task_id]
-    if len(task) == 0:
-        abort(404)
-    return jsonify({'task': task[0]})
-
-@app.route('/todo/api/v1.0/tasks', methods=['POST'])
-def create_task():
-    if not request.json or not "title" in request.json:
-        abort(400)
-    task = {
-        'id': tasks[-1]["id"] + 1,
-        'title': request.json["title"],
-        'description': request.json.get("description", ""),
-        'done': False
-    }
-    tasks.append(task)
-    return jsonify({'task': task}), 201
-
-if __name__ == '__main__':
-    app.run(debug=True)"""
-
-#hasta aca la prueba
