@@ -1,7 +1,7 @@
 <html>
     <head>
         <h1 align="center">Estado de Vigencia de Empresas</h1>
-	% ultVigencia = leer.UltAct[0]['fVigencia']
+	% ultVigencia = UltAct
 	<h1 align="center">La ultima vigencia es {{ultVigencia}} </h1>
 	
         <style>
@@ -58,34 +58,34 @@
              % fmt = '%d/%m/%y %H:%M:%S'
              % d1 = datetime.strptime(ultVigencia,fmt) #Ultima vigencia
              
-            %for elemento in leer.Empresas:
+            %for elemento in Empresas:
                 
                
-                % eltoVigencia = elemento['fVigencia']                
+                % eltoVigencia = elemento.fVigencia                
                 % d2=datetime.strptime(eltoVigencia,fmt)   #Elemento vigencia
                 % diffseg= ((d1-d2).seconds)/3600.0  
                 % diffdias= (d1-d2).days
                 
                 %if diffseg > 24 or diffdias > 0 :
                     <tr class="rojo">
-                        <td>{{elemento['Empresa']}}</td> 
-                        <td>{{elemento['Sucursal']}}</td> 
-                        <td>{{elemento['fVigencia']}}</td> 
-                        <td>{{elemento['CantPrecio']}}</td> 
+                        <td>{{elemento.Empresa}}</td> 
+                        <td>{{elemento.Sucursal}}</td> 
+                        <td>{{elemento.fVigencia}}</td> 
+                        <td>{{elemento.CantPrecio}}</td> 
                     </tr>
                 %elif elemento['fVigencia'] == UltAct[0]['fVigencia']:
                     <tr class="verde">
-                        <td>{{elemento['Empresa']}}</td> 
-                        <td>{{elemento['Sucursal']}}</td> 
-                        <td>{{elemento['fVigencia']}}</td> 
-                        <td>{{elemento['CantPrecio']}}</td> 
+                        <td>{{elemento.Empresa}}</td> 
+                        <td>{{elemento.Sucursal}}</td> 
+                        <td>{{elemento.fVigencia}}</td> 
+                        <td>{{elemento.CantPrecio}}</td> 
                     </tr>             
                 %else:
                     <tr class="amarillo">
-                        <td>{{elemento['Empresa']}}</td> 
-                        <td>{{elemento['Sucursal']}}</td> 
-                        <td>{{elemento['fVigencia']}}</td> 
-                        <td>{{elemento['CantPrecio']}}</td> 
+                        <td>{{elemento.Empresa}}</td> 
+                        <td>{{elemento.Sucursal}}</td> 
+                        <td>{{elemento.fVigencia}}</td> 
+                        <td>{{elemento.CantPrecio}}</td> 
                     </tr>
                  %end   
                         
