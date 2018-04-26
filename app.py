@@ -112,7 +112,7 @@ def update_task(task_nom):
     nom = task_nom  #request.json["Empresa"]
     suc = request.json["Sucursal"]
     
-    task = [task for task in tasks if ( task['Empresa'] == nom and task['Sucursal'] == suc )]
+    task = [task for task in tasks if task['Empresa'] == nom ]#and task['Sucursal'] == suc )]
     
     if len(task) == 0:
         abort(404)
