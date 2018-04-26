@@ -57,7 +57,7 @@
              {% fmt = '%d/%m/%y %H:%M:%S' %}
              {% d1 = datetime.strptime(ultact,fmt) #Ultima vigencia %}
              
-            {%for elemento in empresas: %}
+            {% for elemento in empresas: %}
                 
                
                 {% eltoVigencia = elemento['fVigencia'] %}                
@@ -88,7 +88,7 @@
                     </tr>
                  {% endif %}   
                         
-            {%endfor 
+            {% endfor %}
             
         </table>
 
