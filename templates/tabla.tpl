@@ -54,19 +54,13 @@
 			</tr>          
 
 			
-			{% for elemento in empresas: %}	
-			
-				
-				
-					<tr class="rojo">
-						<td>{{elemento['Empresa']}}</td> 
-						<td>{{elemento['Sucursal']}}</td> 
-						<td>{{elemento['fVigencia']}}</td> 
-						<td>{{elemento['CantPrecio']}}</td> 
-					</tr>
-				
-							
-
+			{% for elemento in empresas: %}					
+				<tr class="rojo">
+					<td>{{elemento['Empresa']}}</td> 
+					<td>{{elemento['Sucursal']}}</td> 
+					<td>{{elemento['fVigencia']}}</td> 
+					<td>{{elemento['CantPrecio']}}</td> 
+				</tr>
 			{% endfor %}
 
 		</table>
