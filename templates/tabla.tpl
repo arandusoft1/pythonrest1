@@ -1,7 +1,7 @@
 <html>
     <head>
         <h1 align="center">Estado de Vigencia de Empresas</h1>
-	% ultVigencia = UltAct[0]['fVigencia']
+	% ultVigencia = leer.UltAct[0]['fVigencia']
 	<h1 align="center">La ultima vigencia es {{ultVigencia}} </h1>
 	
         <style>
@@ -58,7 +58,7 @@
              % fmt = '%d/%m/%y %H:%M:%S'
              % d1 = datetime.strptime(ultVigencia,fmt) #Ultima vigencia
              
-            %for elemento in Empresas:
+            %for elemento in leer.Empresas:
                 
                
                 % eltoVigencia = elemento['fVigencia']                
