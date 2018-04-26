@@ -67,7 +67,7 @@ def index():
 	
 	for elemento in empresas:
 		
-		eltoVigencia = elemento['fVigencia']                
+		eltoVigencia = elemento[2]                
                 d2=datetime.strptime(eltoVigencia,fmt)   #Elemento vigencia
                 diffseg= ((d1-d2).seconds)/3600.0  
                 diffdias= (d1-d2).days
