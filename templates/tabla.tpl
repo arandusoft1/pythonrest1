@@ -54,7 +54,7 @@
 			</tr>          
 
 
-		{% from datetime import datetime %}
+
 	   	{% fmt = '%d/%m/%y %H:%M:%S' %}
 	    	{% d1 = datetime.strptime(ultact,fmt) #Ultima vigencia %}
 		
