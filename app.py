@@ -78,10 +78,10 @@ def index():
 	    		empresas[cont]["color"] = "V"                           
                	else:
 	    		empresas[cont]["color"] = "A"                     
-		endif
+		
 		
 		cont = cont + 1
-	endfor
+	
 		
 		
 				
@@ -91,7 +91,7 @@ def index():
 	
 	#return repr(fvig)
 	
-	leer = {"Empresas":  empresas , "UltAct": [{"fVigencia": ultact }]}		
+	##leer = {"Empresas":  empresas , "UltAct": [{"fVigencia": ultact }]}		
 	
 	#leer = json.loads(open('locales.json').read())	
 	return render_template('tabla.tpl', ultact=ultact, empresas=empresas)
