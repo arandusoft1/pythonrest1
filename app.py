@@ -5,7 +5,7 @@ from flask_httpauth import HTTPBasicAuth
 from datetime import datetime
 import psycopg2, psycopg2.extras
 import json
-from pythonrest1 import pythonrest1
+from app import app
 
 
 app = Flask(__name__, static_url_path = "")
@@ -69,7 +69,7 @@ def index():
 		
 
 	#leer = json.loads(open('locales.json').read())	
-    return render_template('tabla.tpl', leer)
+    return render_template('tabla.tpl', leer=leer)
 	##return template('tabla.tpl', leer)
 #####################################################################################################################################
 
