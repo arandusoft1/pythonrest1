@@ -6,6 +6,7 @@ from datetime import datetime
 import psycopg2, psycopg2.extras
 import json
 from app import app
+from sys import argv
 
 
 app = Flask(__name__, static_url_path = "")
