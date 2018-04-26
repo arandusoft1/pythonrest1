@@ -79,9 +79,11 @@ def index():
                    	a[cont]["color"] = "V"                                
                 else:
                     	a[cont]["color"] = "A"
+		
+		cont = cont + 1
                   
-                end   
-	end 
+                   
+	 
 	
 	
 	#return repr(fvig)
