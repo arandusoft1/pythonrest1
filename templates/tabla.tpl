@@ -55,7 +55,7 @@
 
 
 
-			
+			{% from datetime import datetime %}
 			{% d1 = datetime.strptime(ultact,fmt) %}
 			
 			{% for elemento in empresas: %}
