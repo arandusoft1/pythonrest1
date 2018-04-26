@@ -57,12 +57,12 @@ def get_task(task_nom):
 
 ######################################################################################################################################
 
-@app.route('/todo/api/v1.0/tasks/<task_nom>/<task_suc>', methods=['GET'])
+"""@app.route('/todo/api/v1.0/tasks/<task_nom>/<task_suc>', methods=['GET'])
 def get_task(task_nom, task_suc):
     task = [task for task in tasks if task['Empresa'] == task_nom and task['Sucursal'] == task_suc ]
     if len(task) == 0:
         abort(404)
-    return jsonify({'task': task[0]})
+    return jsonify({'task': task[0]})"""
 
 ######################################################################################################################################
 @app.route('/todo/api/v1.0/tasks', methods=['POST'])
@@ -112,7 +112,7 @@ def update_task(task_nom):
     nom = task_nom  #request.json["Empresa"]
     suc = request.json["Sucursal"]
     
-    task = [task for task in tasks if task['Empresa'] == nom and task['Sucursal'] == suc]
+    task = [task for task in tasks if ( task['Empresa'] == nom and task['Sucursal'] == suc )]
     
     if len(task) == 0:
         abort(404)
