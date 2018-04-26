@@ -42,10 +42,7 @@ def index():
 	con.execute("select * from Empresas;")
 	rows = con.fetchall()
 	empresas= []
-	fmt = '%d/%m/%y %H:%M:%S'
-	ultact = "01/01/01 00:00:00"
-	d2 = datetime.strptime(ultact,fmt)	
-	
+		
 	for row in rows:
 		empresas.append({"Empresa": row[1],"Sucursal": row[2],"fVigencia": row[3],"CantPrecio": row[4]})
 		#fvig.append({"fVigencia": row[3]})
@@ -68,7 +65,7 @@ def index():
 	for elemento in empresas:
 		
 		eltoVigencia = elemento['fVigencia']                
-		d2=datetime.strptime(eltoVigencia,fmt)   #Elemento vigencia
+		d2 = datetime.strptime(eltoVigencia,fmt)   #Elemento vigencia
 		diffseg= ((d1-d2).seconds)/3600.0  
 		diffdias= (d1-d2).days
                 
