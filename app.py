@@ -100,7 +100,7 @@ def get_task(task_nom):
     task = [task for task in tasks if task['Empresa'] == task_nom]
     if len(task) == 0:
         abort(404)
-    return jsonify({'task': task})
+    return jsonify({'Empresa': task})
 
 ######################################################################################################################################
 
