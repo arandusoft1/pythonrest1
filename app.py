@@ -57,12 +57,12 @@ def get_task(task_nom):
 
 ######################################################################################################################################
 
-@app.route('/todo/api/v1.0/tasks/<task_nom>/<task_suc>', methods=['GET'])
+"""@app.route('/todo/api/v1.0/tasks/<task_nom>/<task_suc>', methods=['GET'])
 def get_task(task_nom, task_suc):
     task = [task for task in tasks if (task['Empresa'] == task_nom and task['Sucursal'] == task_suc) ]
     if len(task) == 0:
         abort(404)
-    return jsonify({'task': task[0]})
+    return jsonify({'task': task[0]})"""
 
 ######################################################################################################################################
 @app.route('/todo/api/v1.0/tasks', methods=['POST'])
@@ -127,27 +127,22 @@ def update_task(task_nom):
     task[0]['CantPrecio'] = request.json.get('CantPrecio', task[0]['CantPrecio'])    
     #task[0]['done'] = request.json.get('done', task[0]['done'])
     
-    """fVig = task[0]['fVigencia']
+    fVig = task[0]['fVigencia']
     canpro = task[0]['CantPrecio']  
     
     conn = psycopg2.connect(database='d3fkm1msg7kiub',user='wdtetudvoejjev',password='b7fefda1a504e80018b763ba3d8bcb94804c54dfff9a3372b4a70ee042dadf22', host='ec2-54-83-1-94.compute-1.amazonaws.com')
     
-    rec = conn.cursor()
-    rec.execute("select codigo from Empresas where nombre = %s and sucursal = %s",(nom,suc))
-    rows = rec.fetchall()
-
-    for row in rows:
-        cod = row[0]
-    
-    rec.close()
+    cur = conn.cursor()        
     
     try:
-        cur.execute("update Empresas set fVigencia='%s', CantPrecio=%d where codigo=%d;" % (fVig,canpro,cod))
+        cur.execute("update Empresas set fVigencia='%s', CantPrecio=%d where Empresa=%s and sucursal = %s ;" % (fVig,canpro,nom,suc))
         conn.commit() 
     except(Exception, psycopg2.DatabaseError) as error:
         conn.rollback()
-        
-    conn.close()"""   
+    
+    cur.close()
+    
+    conn.close()
     
     return jsonify({'task': task[0]})
 #######################################################################################################################################
