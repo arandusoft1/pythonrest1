@@ -1,6 +1,7 @@
 <html>
     <head>
     	<title>Tabla de vigencias</title>
+	<link rel="icon" type="image/png" href="https://github.com/arandusoft1/pythonrest1/blob/master/favicon.png?raw=true" />
 	
         <style>
 	    	    
