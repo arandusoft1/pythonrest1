@@ -83,8 +83,9 @@
     </head>
     <body bgcolor=#f1f1c1>
       <div align="left">
-		    <IMG src="https://github.com/arandusoft1/pythonrest1/blob/master/friarlogo.png?raw=true" border=0 width="220" height="61"></th>
-	    </div>
+      		    <IMG src="https://github.com/arandusoft1/pythonrest1/blob/master/friarlogo.png?raw=true" border=0 width="220" height="61"></th>
+      </div>
+      
       <ul>
         <li><a class="active" href="/index">Tabla completa</a></li>
         <li><a href="/UltimaVigencia">Ultima vigencia</a></li>
