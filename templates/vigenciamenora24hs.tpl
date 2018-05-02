@@ -68,7 +68,7 @@
             {% for elemento in empresas: %}
                      
                 
-              {% if elemento['color'] == "V": %}
+              {% if elemento['color'] == "A": %}
                   <tr class="verde">
                     <td>{{elemento['Empresa']}}</td> 
                     <td>{{elemento['Sucursal']}}</td> 
