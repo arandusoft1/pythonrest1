@@ -53,10 +53,11 @@
     <body bgcolor=#f1f1c1>
     	
 	<div class="banner">Another box, after the floating boxes...</div>
-	<div align="center"><IMG src="http://www.diariohuarpe.com/actualidad/friar-apoya-y-se-compromete-con-el-rugby-sanjuanino/" border=0 width=50 height=20></div>
+	<div align="left"><IMG src="https://github.com/arandusoft1/pythonrest1/blob/master/friarlogo.png?raw=true" border=0></div>
+	<div align="center">
 	<h1 align="center">Estado de Vigencia de Empresas</h1>
 	<h1 align="center">La ultima vigencia es {{ultact}} </h1>
-	
+	</div>
         <table style="width:80%" align="center">
             <tr>
                 <th>Empresa</th>
