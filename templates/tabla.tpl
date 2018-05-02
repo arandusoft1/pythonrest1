@@ -6,7 +6,9 @@
 	    
 	    .banner {
             	clear: left;
-            	border: 10px solid red;      
+		padding: 30px
+            	border: 10px solid red;
+		background-color: #fffff; 
             }
 	    
             table, th, td {
@@ -51,7 +53,7 @@
     <body bgcolor=#f1f1c1>
     	
 	<div class="banner">Another box, after the floating boxes...</div>
-	
+	<div align="center"><IMG src="http://www.diariohuarpe.com/actualidad/friar-apoya-y-se-compromete-con-el-rugby-sanjuanino/" border=0 width=50 height=20></div>
 	<h1 align="center">Estado de Vigencia de Empresas</h1>
 	<h1 align="center">La ultima vigencia es {{ultact}} </h1>
 	
