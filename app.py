@@ -158,13 +158,14 @@ def vig_menor24():
 	
 	for elemento in empresas:
 		
-		da2=datetime.strptime(elemento["fVigencia"],fmt)   #Elemento vigencia
-		diffseg1= ((da1-da2).seconds)/3600.0
-		diffdias1= (da1-da2).days
-		
-		if not (elemento["fVigencia"] == ultact) and not (diffseg1 > 24 or diffdias1 > 0) :
-			empresas[cont]["color"] = "A					
-		
+		if not (elemento["fVigencia"] == ultact):
+			da2=datetime.strptime(elemento["fVigencia"],fmt)   #Elemento vigencia
+			diffseg1= ((da1-da2).seconds)/3600.0
+			diffdias1= (da1-da2).days
+			
+			if not (diffseg1 > 24 or diffdias1 > 0): 
+				empresas[cont]["color"] = "A"				
+			
 		cont = cont + 1
 		
 	return render_template('vigenciamenora24hs.tpl', ultact=ultact,empresas=empresas)
@@ -201,12 +202,14 @@ def vig_mayor24():
 	
 	for elemento in empresas:
 		
-		da2=datetime.strptime(elemento["fVigencia"],fmt)   #Elemento vigencia
-		diffseg1= ((da1-da2).seconds)/3600.0
-		diffdias1= (da1-da2).days
-		
-		if not (elemento["fVigencia"] == ultact) and (diffseg1 > 24 or diffdias1 > 0):
-			empresas[cont]["color"] = "R"								
+		if not (elemento["fVigencia"] == ultact):
+			empresas[cont]["color"] = "V"
+			da2=datetime.strptime(elemento["fVigencia"],fmt)   #Elemento vigencia
+			diffseg1= ((da1-da2).seconds)/3600.0
+			diffdias1= (da1-da2).days
+			
+			if (diffseg1 > 24 or diffdias1 > 0):
+				empresas[cont]["color"] = "R"								
 		
 		cont = cont + 1
 		
