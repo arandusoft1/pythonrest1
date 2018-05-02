@@ -43,8 +43,11 @@
 	    
 	    table .foot {
 	            width: 750px;
-		    border: 0px solid transparent;
             }
+	    table .bordes {
+	    	border: 0px solid black;
+                border-collapse: collapse;					
+	    }
             
         </style>
     </head>
@@ -97,13 +100,13 @@
             
         </table>
 	<table style="width:80%" align="center" class="foot">
-		<tr style="text-align:left">
+		<tr style="text-align:left" class="bordes">
 			<th><font color="#118c11">■</font> Ultima vigencia</th>
             	</tr>
-		<tr>
+		<tr class="bordes">
 			<td><font color="#cece1e">■</font> Mas de 12 hs sin actualizar</td>
 		</tr>
-		<tr>
+		<tr class="bordes">
 			<td><font color="#bf5858">■</font> Mas de 24 hs sin actualizar</td>
 		</tr>
 		
