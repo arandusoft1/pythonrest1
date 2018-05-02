@@ -157,18 +157,13 @@ def vig_menor24():
 	cont = 0	
 	
 	for elemento in empresas:
-				
-		if elemento["fVigencia"] == ultact:
-			
-		else:
-			da2=datetime.strptime(elemento["fVigencia"],fmt)   #Elemento vigencia
-			diffseg1= ((da1-da2).seconds)/3600.0
-			diffdias1= (da1-da2).days
 		
-			if (diffseg1 > 24 or diffdias1 > 0):
-					
-			else: 
-				empresas[cont]["color"] = "A"
+		da2=datetime.strptime(elemento["fVigencia"],fmt)   #Elemento vigencia
+		diffseg1= ((da1-da2).seconds)/3600.0
+		diffdias1= (da1-da2).days
+		
+		if not (elemento["fVigencia"] == ultact) and not (diffseg1 > 24 or diffdias1 > 0) :
+			empresas[cont]["color"] = "A					
 		
 		cont = cont + 1
 		
@@ -205,16 +200,13 @@ def vig_mayor24():
 	cont = 0	
 	
 	for elemento in empresas:
-				
-		if elemento["fVigencia"] == ultact:
-			
-		else:
-			da2=datetime.strptime(elemento["fVigencia"],fmt)   #Elemento vigencia
-			diffseg1= ((da1-da2).seconds)/3600.0
-			diffdias1= (da1-da2).days
 		
-			if (diffseg1 > 24 or diffdias1 > 0):
-				empresas[cont]["color"] = "R"				
+		da2=datetime.strptime(elemento["fVigencia"],fmt)   #Elemento vigencia
+		diffseg1= ((da1-da2).seconds)/3600.0
+		diffdias1= (da1-da2).days
+		
+		if not (elemento["fVigencia"] == ultact) and (diffseg1 > 24 or diffdias1 > 0):
+			empresas[cont]["color"] = "R"								
 		
 		cont = cont + 1
 		
