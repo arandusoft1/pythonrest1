@@ -103,7 +103,7 @@
           <h1>La ultima vigencia es {{ultact}} </h1>
 	      </div>
         
-        <table style="width:80%" align="center">
+        <table style="width:100%" align="center">
             <tr>
                 <th>Empresa</th>
                 <th>Sucursal</th> 
@@ -142,7 +142,7 @@
             {% endfor %} 
             
         </table>
-        <table style="width:80%; border: hidden;" align="center" class="foot" >
+        <table style="width:100%; border: hidden;" align="center" class="foot" >
           <tr style="text-align:left; border: hidden;">
             <th style="text-align:left; border: hidden">&nbsp</th>
           </tr>
