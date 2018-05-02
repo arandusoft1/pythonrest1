@@ -41,6 +41,11 @@
 	            width: 150px;
             }
 	    
+	    table .foot {
+	            width: 750px;
+            }
+	    
+	    
 	    span.foot {
 		    display: inline; /* the default for span */
 		    width: 70px;
@@ -101,10 +106,17 @@
             {% endfor %} 
             
         </table>
-	<span class="a">
-		<p ><font color="#118c11">■</font> Ultima vigencia</p>
-		<p ><font color="#cece1e">■</font> Mas de 12 hs sin actualizar</p>
-		<p ><font color="#bf5858">■</font> Mas de 24 hs sin actualizar</p>
-        </span>
+	<table style="width:80%" align="center" class="foot">
+		<tr>
+			<th><font color="#118c11">■</font> Ultima vigencia</th>
+            	</tr>
+		<tr>
+			<td><font color="#cece1e">■</font> Mas de 12 hs sin actualizar</td>
+		</tr>
+		<tr>
+			<td><font color="#bf5858">■</font> Mas de 24 hs sin actualizar</td>
+		</tr>
+		
+         </table>
     </body>
 </html>
