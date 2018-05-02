@@ -1,9 +1,14 @@
 <html>
     <head>
-        <h1 align="center">Estado de Vigencia de Empresas</h1>
-	<h1 align="center">La ultima vigencia es {{ultact}} </h1>
+    	<title>Tabla de vigencias</title>
 	
         <style>
+	    
+	    .banner {
+            	clear: left;
+            	border: 10px solid red;      
+            }
+	    
             table, th, td {
                 border: 2px solid black;
                 border-collapse: collapse;
@@ -44,7 +49,12 @@
         </style>
     </head>
     <body bgcolor=#f1f1c1>
-    
+    	
+	<div class="banner">Another box, after the floating boxes...</div>
+	
+	<h1 align="center">Estado de Vigencia de Empresas</h1>
+	<h1 align="center">La ultima vigencia es {{ultact}} </h1>
+	
         <table style="width:80%" align="center">
             <tr>
                 <th>Empresa</th>
