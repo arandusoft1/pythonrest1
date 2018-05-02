@@ -92,11 +92,11 @@
             
         </table>
 	
-	<footer>
+	
 	<p ><font color="#118c11">■</font> Ultima vigencia</p>
 	<p ><font color="#cece1e">■</font> Mas de 12 hs sin actualizar</p>
 	<p ><font color="#bf5858">■</font> Mas de 24 hs sin actualizar</p>
-        </footer>
+        
 
     </body>
 </html>
