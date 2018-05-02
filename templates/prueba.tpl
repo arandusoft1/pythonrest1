@@ -17,6 +17,8 @@
                 position: fixed;
                 height: 100%;
                 overflow: auto;
+		max-width: 192px;
+		min-width: 130px;
             }
             
             li a {
