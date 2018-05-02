@@ -3,14 +3,7 @@
     	<title>Tabla de vigencias</title>
 	
         <style>
-	    
-	    .banner {
-            	clear: left;
-		padding: 30px
-            	border: 10px solid red;
-		background-color: #fffff; 
-            }
-	    
+	    	    
             table, th, td {
                 border: 2px solid black;
                 border-collapse: collapse;
@@ -51,13 +44,18 @@
         </style>
     </head>
     <body bgcolor=#f1f1c1>
-    	
-	<div class="banner">Another box, after the floating boxes...</div>
+    
+    	{% block head %}
+	
 	<div align="left"><IMG src="https://github.com/arandusoft1/pythonrest1/blob/master/friarlogo.png?raw=true" border=0></div>
+	
 	<div align="center">
 	<h1 align="center">Estado de Vigencia de Empresas</h1>
 	<h1 align="center">La ultima vigencia es {{ultact}} </h1>
 	</div>
+	
+	{% endblock %}
+	
         <table style="width:80%" align="center">
             <tr>
                 <th>Empresa</th>
