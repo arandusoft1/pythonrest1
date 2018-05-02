@@ -43,17 +43,7 @@
 	    
 	    table .foot {
 	            width: 750px;
-            }
-	    
-	    
-	    span.foot {
-		    display: inline; /* the default for span */
-		    width: 70px;
-		    height: 70px;
-		    padding: 15px;
-		    border: 1px solid blue;    
-		    background-color: yellow;
-		    align="center"
+		    border: 0px solid transparent;
             }
             
         </style>
@@ -107,7 +97,7 @@
             
         </table>
 	<table style="width:80%" align="center" class="foot">
-		<tr>
+		<tr style="text-align:left">
 			<th><font color="#118c11">■</font> Ultima vigencia</th>
             	</tr>
 		<tr>
