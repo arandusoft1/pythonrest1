@@ -101,7 +101,7 @@
 			<th style="text-align:left; border: hidden">&nbsp</th>
             	</tr>
 		<tr style="text-align:left; border: hidden;">
-			<th style="text-align:left; border: hidden"><font color="#118c11">■</font><a href="/UltimaVigencia">Ultima vigencia</a></th>
+			<th style="text-align:left; border: hidden"><font color="#118c11">■</font>&nbsp<a href="/UltimaVigencia">&nbspUltima vigencia</a></th>
             	</tr>
 		<tr style="border: hidden">
 			<td style="border: hidden"><font color="#cece1e">■</font> Mas de 12 hs sin actualizar</td>
