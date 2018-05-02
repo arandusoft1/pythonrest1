@@ -97,7 +97,7 @@
         </table>
 	<table style="width:80%; border: hidden;" align="center" class="foot" >
 		<tr style="text-align:left; border: hidden;">
-			<th style="text-align:left; border: hidden">       </th>
+			<th style="text-align:left; border: hidden">&nbsp</th>
             	</tr>
 		<tr style="text-align:left; border: hidden;">
 			<th style="text-align:left; border: hidden"><font color="#118c11">■</font> Ultima vigencia</th>
