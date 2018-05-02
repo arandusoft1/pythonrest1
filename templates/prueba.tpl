@@ -17,9 +17,10 @@
                 position: fixed;
                 height: 100%;
                 overflow: auto;
-		max-width: 192px;
-		min-width: 130px;
-            }
+	    	max-width: 192px;
+	    	min-width: 130px;
+	    	top: 66px;
+	    }
             
             li a {
                 display: block;
@@ -84,7 +85,7 @@
         </style>
     </head>
     <body bgcolor=#f1f1c1>
-      <div align="left">
+      <div align="left" style="position:fixed">
       		    <IMG src="https://github.com/arandusoft1/pythonrest1/blob/master/friarlogo.png?raw=true" border=0 width="220" height="61"></th>
       </div>
       
