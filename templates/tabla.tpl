@@ -44,11 +44,7 @@
 	    table .foot {
 	            width: 750px;
             }
-	    table .bordes {
-	    	border: 0px solid black;
-                border-collapse: collapse;					
-	    }
-            
+	  
         </style>
     </head>
     <body bgcolor=#f1f1c1>
@@ -99,15 +95,15 @@
             {% endfor %} 
             
         </table>
-	<table style="width:80%" align="center" class="foot">
-		<tr style="text-align:left" class="bordes">
-			<th><font color="#118c11">■</font> Ultima vigencia</th>
+	<table style="width:80%; border: hidden;" align="center" class="foot" >
+		<tr style="text-align:left; border: hidden;">
+			<th style="border: hidden"><font color="#118c11">■</font> Ultima vigencia</th>
             	</tr>
-		<tr class="bordes">
-			<td><font color="#cece1e">■</font> Mas de 12 hs sin actualizar</td>
+		<tr style="border: hidden">
+			<td style="border: hidden"><font color="#cece1e">■</font> Mas de 12 hs sin actualizar</td>
 		</tr>
-		<tr class="bordes">
-			<td><font color="#bf5858">■</font> Mas de 24 hs sin actualizar</td>
+		<tr style="border: hidden">
+			<td style="border: hidden"><font color="#bf5858">■</font> Mas de 24 hs sin actualizar</td>
 		</tr>
 		
          </table>
