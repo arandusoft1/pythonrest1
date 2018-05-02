@@ -84,10 +84,10 @@
 		    <IMG src="https://github.com/arandusoft1/pythonrest1/blob/master/friarlogo.png?raw=true" border=0 width="220" height="61"></th>
 	    </div>
       <ul>
-        <li><a class="active" href="#home">Home</a></li>
-        <li><a href="#news">News</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="#about">About</a></li>
+        <li><a class="active" href="/index">Tabla completa</a></li>
+        <li><a href="/UltimaVigencia">Ultima vigencia</a></li>
+        <li><a href="/vigenciamenora24hs">Vigencia menor a 24 hs</a></li>
+        <li><a href="/vigenciamayora24hs">Vigencia mayor a 24 hs</a></li>
       </ul>
 
       <div style="margin-left:25%;padding:1px 16px;height:1000px;">
