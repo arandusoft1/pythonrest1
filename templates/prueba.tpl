@@ -88,6 +88,7 @@
       		    <IMG src="https://github.com/arandusoft1/pythonrest1/blob/master/friarlogo.png?raw=true" border=0 width="220" height="61"></th>
       </div>
       
+      <div>
       <ul>
         <li><a class="active" href="/index">Tabla completa</a></li>
         <li><a href="/UltimaVigencia">Ultima vigencia</a></li>
@@ -95,7 +96,7 @@
         <li><a href="/vigenciamayora24hs">Vigencia mayor a 24 hs</a></li>
       </ul>
 
-      <div style="margin-left:25%;padding:1px 16px;height:1000px;">
+      <div style="margin-left:192;padding:1px 16px;height:1000px;">
         
         <div align="center">
           <h1>La ultima vigencia es {{ultact}} </h1>
@@ -157,6 +158,8 @@
         </table>
         
         
-      </div>        
+      </div>
+      </div>
+      
     </body>
 </html>
