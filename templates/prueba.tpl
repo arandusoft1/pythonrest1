@@ -24,11 +24,13 @@
                 color: #000;
                 padding: 8px 16px;
                 text-decoration: none;
+		font-weight: bold;
             }
             
             li a.active {
                 background-color: #e14314;
                 color: white;
+		font-weight: bold;
             }
             
             li a:hover:not(.active) {
