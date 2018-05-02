@@ -140,13 +140,13 @@
             <th style="text-align:left; border: hidden">&nbsp</th>
           </tr>
           <tr style="text-align:left; border: hidden;">
-            <th style="text-align:left; border: hidden"><font color="#118c11">■</font>&nbsp<a href="/UltimaVigencia">Ultima vigencia</a></th>
+            <th style="text-align:left; border: hidden"><font color="#118c11">■</font>&nbspUltima vigencia</th>
           </tr>
           <tr style="border: hidden">
-            <td style="border: hidden"><font color="#cece1e">■</font>&nbsp<a href="/vigenciamenora24hs">Vigencia menor a 24 hs sin actualizar</a></td>
+            <td style="border: hidden"><font color="#cece1e">■</font>&nbspVigencia menor a 24 hs sin actualizar</td>
           </tr>
           <tr style="border: hidden">
-            <td style="border: hidden"><font color="#bf5858">■</font>&nbsp<a href="/vigenciamayora24hs">Vigencia mayor a 24 hs sin actualizar</a></td>
+            <td style="border: hidden"><font color="#bf5858">■</font>&nbspVigencia mayor a 24 hs sin actualizar</td>
           </tr>
           
         </table>
