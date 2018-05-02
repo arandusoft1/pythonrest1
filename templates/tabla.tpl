@@ -97,7 +97,10 @@
         </table>
 	<table style="width:80%; border: hidden;" align="center" class="foot" >
 		<tr style="text-align:left; border: hidden;">
-			<th style="border: hidden"><font color="#118c11">■</font> Ultima vigencia</th>
+			<th style="text-align:left; border: hidden"></th>
+            	</tr>
+		<tr style="text-align:left; border: hidden;">
+			<th style="text-align:left; border: hidden"><font color="#118c11">■</font> Ultima vigencia</th>
             	</tr>
 		<tr style="border: hidden">
 			<td style="border: hidden"><font color="#cece1e">■</font> Mas de 12 hs sin actualizar</td>
