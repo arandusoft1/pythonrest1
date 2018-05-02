@@ -45,17 +45,13 @@
     </head>
     <body bgcolor=#f1f1c1>
     
-    	{% block head %}
-	
+    		
 	<div align="left"><IMG src="https://github.com/arandusoft1/pythonrest1/blob/master/friarlogo.png?raw=true" border=0 width="220" height="61"></div>
 	
 	<div align="center">
-	<h1 align="center">Estado de Vigencia de Empresas</h1>
-	<h1 align="center">La ultima vigencia es {{ultact}} </h1>
+		<h1>La ultima vigencia es {{ultact}} </h1>
 	</div>
-	
-	{% endblock %}
-	
+		
         <table style="width:80%" align="center">
             <tr>
                 <th>Empresa</th>
