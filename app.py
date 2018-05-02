@@ -164,7 +164,7 @@ def Ult_Vig():
 		cont = cont + 1
 		
 	return render_template('vigenciamenora24hs.tpl', ultact=ultact,empresas=empresas)
-
+	
 #####################################################################################################################################
 @app.route('/vigenciamayora24hs')
 def Ult_Vig():
@@ -203,9 +203,7 @@ def Ult_Vig():
 		cont = cont + 1
 		
 	return render_template('vigenciamayora24hs.tpl', ultact=ultact,empresas=empresas)
-
-
-
+	
 #####################################################################################################################################
 @app.route('/empresas', methods=['GET'])
 def get_tasks():
