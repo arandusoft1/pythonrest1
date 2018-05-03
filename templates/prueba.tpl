@@ -41,6 +41,7 @@
                 color: white;
             }
             
+	    
             table, th, td {
                 border: 2px solid black;
                 border-collapse: collapse;
@@ -48,10 +49,14 @@
             th, td {
                 padding: 5px;
                 font-weight: bold;
+            }
+	    td {
                 color: #000;
-            }           
+            }   	    
             th {
                 text-align: center;;
+	    	color: #fff;
+		background-color:#e14314;
             }
             table .rojo {
                 background-color:#bf5858;
@@ -81,6 +86,8 @@
 	    table .foot {
 	            width: 750px;
             }
+	    
+	    
 	    
 	    div.sticky {
 	    	    position: -webkit-sticky;
