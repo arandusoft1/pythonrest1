@@ -5,18 +5,80 @@
 	
         <style>
 	    	    
-            table, th, td {
+            body {
+              margin: 0;
+            }
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;                
+                background-color: #333333;
+                position: fixed;                
+                overflow: auto;
+	    	top: 71px;			    
+	    }
+	    
+	    ul {
+            	max-width: 223px;
+            	min-width: 223px;
+		width: 25%;
+	    	height: 100%;
+	    	border-radius: 0px 15px 0px 0px;
+	    }
+            
+            li a {
+                display: block;
+                color: #fffff0;
+                padding: 8px 16px;
+                text-decoration: none;
+		font-weight: bold;
+            }
+            
+            li a.active {
+                background-color: #e14314;
+                color: white;
+		font-weight: bold;
+            }
+            
+            li a:hover {
+                background-color: #111;
+                color: white;
+            }
+            
+	    
+            table {
                 border: 2px solid black;
                 border-collapse: collapse;
+		font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
             }
             th, td {
+	    	border: 2px solid black;
+                border-collapse: collapse
                 padding: 5px;
                 font-weight: bold;
-                color: #000;
-            }           
-            th {
-                text-align: center;;
             }
+	    #principal {
+	    	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	    }
+	    
+	    #principal td {
+                color: #000;
+            }   	    
+            #principal th {
+                text-align: center;;
+	    	color: #fff;
+		background-color:#333333;
+            }
+	    #principal tr:hover {
+	    	background-color: #ddd;
+            }
+	    
+	    
+            #fuente {
+	    	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	    }
+	    
+	    
             table .rojo {
                 background-color:#bf5858;
             }
@@ -24,7 +86,7 @@
                 background-color:#cece1e;
             }
             table .verde {
-                background-color:#118c11;
+                background-color:#4caf50;
             }
             table td:first-child {
                 width: 200px;
@@ -45,17 +107,78 @@
 	    table .foot {
 	            width: 750px;
             }
+	    
+	    div .a {
+	    margin-left: 192px;
+	    }
+	    
+	    div.sticky {
+	    	position: -webkit-sticky;
+	    	position: sticky;
+	    	top: 0;
+	    	padding: 5px;
+	    	background-color: #ffffff;
+	    	border: 0px solid #ffffff;
+            }
+	    
+	    #logo table {
+	    	border-collapse: collapse;
+            	border: 0px solid black;
+	    	width: 100%
+	    }
+	    #logo th {	
+            	text-align: left;
+	    	border: 0px solid black;
+	    }
+	    #logo img {
+            	min-height:20px
+	    }
+	    
+	    @media screen and (max-width: 600px) {
+  	    	ul {
+            		width: 100%;
+			min-width: auto;
+			max-width: unset;
+			height: 141px;
+			border-radius: 15px 15px 0px 0px;
+            	}
+		li a {
+			text-align: center;
+		}
+		div .a {
+			margin-left: 0px;
+			margin-top: 138px;
+		}
+            }
+	 
 	  
         </style>
     </head>
-    <body bgcolor=#f1f1c1>
-    
-    		
-	<div align="left"><IMG src="https://github.com/arandusoft1/pythonrest1/blob/master/friarlogo.png?raw=true" border=0 width="220" height="61"></div>
-	
-	<div align="center">
-		<h1>La ultima vigencia es {{ultact}} </h1>
-	</div>
+    <body bgcolor=#fffff>
+      <div class="sticky">
+      	<table id="logo" style="width: 100%;border: hidden;">
+		<tr id="logo">
+			<th id="logo" align="center" style="padding-right: 0px;width: 200px;"><img id="logo" src="https://github.com/arandusoft1/pythonrest1/blob/master/logofriarconpata.png?raw=true" alt="Norway" style="float:left;width="100px"; height: 62px;"></th>
+			<th id="logo" style="padding-left: 0px; padding-right: 0px;"><img id="logo" src="https://github.com/arandusoft1/pythonrest1/blob/master/patafriar.png?raw=true" alt="Paris" style="float:left;width: 100%;margin-top: 41px;height: 120.703;height: 0px;"></th>
+			<th id="logo" style="padding-left: 0px;width: 9px;"><img id="logo" src="https://github.com/arandusoft1/pythonrest1/blob/master/tapadepata.png?raw=true" alt="Paris" style="float:left;width: 9px;margin-top: 41px;height: 120.703;height: 20px;"></th>
+		</tr>  
+	</table>
+      </div>
+      
+      <div>
+      <ul id="fuente">
+        <li><a class="active" href="/index">Tabla completa</a></li>
+        <li><a href="/UltimaVigencia">Ultima vigencia</a></li>
+        <li><a href="/vigenciamenora24hs">Vigencia menor a 24 hs</a></li>
+        <li><a href="/vigenciamayora24hs">Vigencia mayor a 24 hs</a></li>
+      </ul>
+
+      <div style="padding:1px 16px;height:1000px;" class="a">
+        
+        <div align="center" id="fuente" >
+          <h1>La ultima vigencia es {{ultact}} </h1>
+        </div>
+        
 		
         <table style="width:80%" align="center">
             <tr>
@@ -94,5 +217,8 @@
 		</tr>
 		
          </table>
+
+      </div>
+      </div>
     </body>
 </html>
