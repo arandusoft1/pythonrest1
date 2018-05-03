@@ -180,7 +180,7 @@
         </div>
         
 		
-        <table style="width:80%" align="center" id="principal">
+        <table style="width:90%" align="center" id="principal">
             <tr>
                 <th>Empresa</th>
                 <th>Sucursal</th> 
