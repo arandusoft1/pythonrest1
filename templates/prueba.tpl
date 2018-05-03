@@ -15,15 +15,15 @@
                 background-color: #333333;
                 position: fixed;                
                 overflow: auto;
-	    	top: 71px;
-		width: 25%;
-	    	height: 100%;
-	    	border-radius: 0px 15px 0px 0px;	    
+	    	top: 71px;			    
 	    }
 	    
-	    ul .algo {
+	    ul {
             	max-width: 223px;
             	min-width: 223px;
+		width: 25%;
+	    	height: 100%;
+	    	border-radius: 0px 15px 0px 0px;
 	    }
             
             li a {
@@ -135,7 +135,7 @@
 	    }
 	    
 	    @media screen and (max-width: 600px) {
-  	    	ul .algo {
+  	    	ul {
             		width: 100%;
 			min-width: auto;
 			max-width: auto;
