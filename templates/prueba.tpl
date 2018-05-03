@@ -128,9 +128,9 @@
 
       <div style="margin-left:192;padding:1px 16px;height:1000px;">
         
-        <div align="center">
-          <h1 style="font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;">La ultima vigencia es {{ultact}} </h1>
-	      </div>
+        <div align="center" style="font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;">
+          <h1>La ultima vigencia es {{ultact}} </h1>
+        </div>
         
         <table style="width:90%" align="center" id="principal">
             <tr>
