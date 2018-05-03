@@ -171,7 +171,7 @@
             {% endfor %} 
             
         </table>
-        <table style="width:90%; border: hidden;" align="center" class="foot" >
+        <table style="width:90%; border: hidden; color: darkslategrey;" align="center" class="foot" >
           <tr style="text-align:left; border: hidden;">
             <th style="text-align:left; border: hidden">&nbsp</th>
           </tr>
