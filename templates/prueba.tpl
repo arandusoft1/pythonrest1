@@ -15,15 +15,15 @@
                 background-color: #333333;
                 position: fixed;                
                 overflow: auto;
-	    	top: 71px;	    
+	    	top: 71px;
+		width: 25%;
+	    	height: 100%;
+	    	border-radius: 0px 15px 0px 0px;	    
 	    }
 	    
 	    ul .algo {
             	max-width: 223px;
             	min-width: 223px;
-	    	width: 25%;
-	    	height: 100%;
-	    	border-radius: 0px 15px 0px 0px;
 	    }
             
             li a {
