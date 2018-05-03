@@ -171,8 +171,8 @@
       <ul id="fuente">
         <li><a class="active" href="/index">Tabla completa</a></li>
         <li><a href="/UltimaVigencia">Ultima vigencia</a></li>
-        <li><a href="/vigenciamenora24hs">Vigencia menor a 24 hs</a></li>
-        <li><a href="/vigenciamayora24hs">Vigencia mayor a 24 hs</a></li>
+        <li><a href="/vigenciamenora24hs">Vigencia menor a 12 hs</a></li>
+        <li><a href="/vigenciamayora24hs">Vigencia mayor a 12 hs</a></li>
       </ul>
 
       <div style="padding:1px 16px;height:1000px;" class="a">
@@ -228,10 +228,10 @@
             <th style="text-align:left; border: hidden"><font color="#118c11">■</font>&nbspUltima vigencia</th>
           </tr>
           <tr style="border: hidden">
-            <td style="border: hidden"><font color="#cece1e">■</font>&nbspVigencia menor a 24 hs sin actualizar</td>
+            <td style="border: hidden"><font color="#cece1e">■</font>&nbspVigencia menor a 12 hs sin actualizar</td>
           </tr>
           <tr style="border: hidden">
-            <td style="border: hidden"><font color="#bf5858">■</font>&nbspVigencia mayor a 24 hs sin actualizar</td>
+            <td style="border: hidden"><font color="#bf5858">■</font>&nbspVigencia mayor a 12 hs sin actualizar</td>
           </tr>
           
         </table>
