@@ -11,16 +11,18 @@
             ul {
                 list-style-type: none;
                 margin: 0;
-                padding: 0;
-                width: 25%;
+                padding: 0;                
                 background-color: #333333;
-                position: fixed;
-                height: 100%;
+                position: fixed;                
                 overflow: auto;
-	    	max-width: 223px;
-	    	min-width: 223px;
-	    	top: 71px;
-		border-radius: 0px 15px 0px 0px;
+	    	top: 71px;		
+	    }
+	    ul .a{
+            	max-width: 223px;
+            	min-width: 223px;
+	    	width: 25%;
+	    	height: 100%;
+	    	border-radius: 0px 15px 0px 0px;
 	    }
             
             li a {
@@ -132,7 +134,7 @@
 	    }
 	    
 	    @media screen and (max-width: 600px) {
-  	    	ul {
+  	    	ul .a{
             		width: 100%;
 			min-width: auto;
 			max-width: auto;
@@ -162,7 +164,7 @@
       </div>
       
       <div>
-      <ul id="fuente">
+      <ul id="fuente" class="a">
         <li><a class="active" href="/index">Tabla completa</a></li>
         <li><a href="/UltimaVigencia">Ultima vigencia</a></li>
         <li><a href="/vigenciamenora24hs">Vigencia menor a 24 hs</a></li>
