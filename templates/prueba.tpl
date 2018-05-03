@@ -8,7 +8,7 @@
             body {
               margin: 0;
             }
-            ul .a{
+            ul {
                 list-style-type: none;
                 margin: 0;
                 padding: 0;
@@ -130,7 +130,7 @@
 	    }
 	    
 	    @media screen and (max-width: 600px) {
-  	    	ul .a {
+  	    	ul {
             		width: 100%;
 			min-width: auto;
 			max-width: auto;
@@ -160,7 +160,7 @@
       </div>
       
       <div>
-      <ul id="fuente" class="a">
+      <ul id="fuente">
         <li><a class="active" href="/index">Tabla completa</a></li>
         <li><a href="/UltimaVigencia">Ultima vigencia</a></li>
         <li><a href="/vigenciamenora24hs">Vigencia menor a 24 hs</a></li>
