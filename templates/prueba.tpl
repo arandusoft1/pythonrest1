@@ -17,9 +17,9 @@
                 position: fixed;
                 height: 100%;
                 overflow: auto;
-	    	max-width: 192px;
-	    	min-width: 130px;
-	    	top: 66px;
+	    	max-width: 223px;
+	    	min-width: 223px;
+	    	top: 71px;
 	    }
             
             li a {
@@ -36,7 +36,7 @@
 		font-weight: bold;
             }
             
-            li a:hover:not(.active) {
+            li a:hover {
                 background-color: #111;
                 color: white;
             }
