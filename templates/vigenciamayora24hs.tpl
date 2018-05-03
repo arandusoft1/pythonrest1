@@ -192,7 +192,7 @@
                      
                 
               {% if elemento['color'] == "R": %}
-                  <tr class="verde">
+                  <tr class="rojo">
                     <td>{{elemento['Empresa']}}</td> 
                     <td>{{elemento['Sucursal']}}</td> 
                     <td>{{elemento['fVigencia']}}</td> 
