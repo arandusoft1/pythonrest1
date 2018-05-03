@@ -177,7 +177,7 @@
 
       <div style="padding:1px 16px;height:1000px;" class="a">
         
-        <div align="center" id="fuente" >
+        <div align="center" id="fuente" style="min-width: 272px;">
           <h1>La ultima vigencia es {{ultact}} </h1>
         </div>
         
