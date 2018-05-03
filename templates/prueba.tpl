@@ -42,11 +42,13 @@
             }
             
 	    
-            table, th, td {
-                border: 2px solid #ddd;
+            table {
+                border: 2px solid black;
                 border-collapse: collapse;
             }
             th, td {
+	    	border: 2px solid #ddd;
+                border-collapse: collapse
                 padding: 5px;
                 font-weight: bold;
             }
@@ -60,7 +62,10 @@
             #principal th {
                 text-align: center;;
 	    	color: #fff;
-		background-color:#e14314;
+		background-color:#333333;
+            }
+	    #principal tr:hover {
+	    	background-color: #ddd;
             }
 	
 	    
