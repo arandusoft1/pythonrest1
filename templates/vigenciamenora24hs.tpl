@@ -211,9 +211,6 @@
 		<tr style="text-align:left; border: hidden;">
 			<th style="text-align:left; border: hidden"><font color="#cece1e">■</font> Vigencia menor a 24 hs</th>
             	</tr>		
-		<tr style="border: hidden">
-			<td style="border: hidden">◄&nbsp<a href="/index">volver a tabla completa</a></td>
-		</tr>
 		
          </table>
 
