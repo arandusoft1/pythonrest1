@@ -17,7 +17,7 @@
                 overflow: auto;
 	    	top: 71px;		
 	    }
-	    ul .a{
+	    ul .b{
             	max-width: 223px;
             	min-width: 223px;
 	    	width: 25%;
@@ -134,7 +134,7 @@
 	    }
 	    
 	    @media screen and (max-width: 600px) {
-  	    	ul .a{
+  	    	ul .b{
             		width: 100%;
 			min-width: auto;
 			max-width: auto;
@@ -164,7 +164,7 @@
       </div>
       
       <div>
-      <ul id="fuente" class="a">
+      <ul id="fuente" class="b">
         <li><a class="active" href="/index">Tabla completa</a></li>
         <li><a href="/UltimaVigencia">Ultima vigencia</a></li>
         <li><a href="/vigenciamenora24hs">Vigencia menor a 24 hs</a></li>
