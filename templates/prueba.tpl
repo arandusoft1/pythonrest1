@@ -128,6 +128,21 @@
 	    #logo img {
             	min-height:20px
 	    }
+	    
+	    @media screen and (max-width: 600px) {
+  	    	ul {
+            		width: 100%;
+			min-width: auto;
+			max-width: auto;
+			height: 141px;
+			border-radius: 15px 15px 0px 0px;
+            	}
+		
+		div a {
+			margin-left: 0px;
+			margin-top: 138px;
+		}
+            }
 
 	 
 	  
@@ -154,7 +169,7 @@
 
       <div style="margin-left:192;padding:1px 16px;height:1000px;">
         
-        <div align="center" id="fuente">
+        <div align="center" id="fuente" class="a">
           <h1>La ultima vigencia es {{ultact}} </h1>
         </div>
         
