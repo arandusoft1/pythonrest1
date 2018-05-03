@@ -45,6 +45,7 @@
             table {
                 border: 2px solid black;
                 border-collapse: collapse;
+		font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
             }
             th, td {
 	    	border: 2px solid black;
