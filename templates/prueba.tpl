@@ -17,7 +17,7 @@
                 overflow: auto;
 	    	top: 71px;		
 	    }
-	    ul .b{
+	    ul .b {
             	max-width: 223px;
             	min-width: 223px;
 	    	width: 25%;
@@ -134,7 +134,7 @@
 	    }
 	    
 	    @media screen and (max-width: 600px) {
-  	    	ul .b{
+  	    	ul .b {
             		width: 100%;
 			min-width: auto;
 			max-width: auto;
