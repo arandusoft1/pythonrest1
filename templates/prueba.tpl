@@ -138,7 +138,7 @@
   	    	ul {
             		width: 100%;
 			min-width: auto;
-			max-width: auto;
+			max-width: unset;
 			height: 141px;
 			border-radius: 15px 15px 0px 0px;
             	}
