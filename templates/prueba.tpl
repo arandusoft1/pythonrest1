@@ -50,7 +50,7 @@
                 padding: 5px;
                 font-weight: bold;
             }
-	    #customers {
+	    #principal {
 	    	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
 	    }
 	    
