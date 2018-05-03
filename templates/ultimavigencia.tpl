@@ -212,10 +212,6 @@
 		<tr style="text-align:left; border: hidden;">
 			<th style="text-align:left; border: hidden"><font color="#118c11">■</font> Ultima vigencia</th>
             	</tr>		
-		<tr style="border: hidden">
-			<td style="border: hidden">◄&nbsp<a href="/index">volver a tabla completa</a></td>
-		</tr>
-		
          </table>
 
       </div>
