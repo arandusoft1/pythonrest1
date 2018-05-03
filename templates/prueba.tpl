@@ -142,7 +142,9 @@
 			height: 141px;
 			border-radius: 15px 15px 0px 0px;
             	}
-		
+		li a {
+			text-align: center;
+		}
 		div .a {
 			margin-left: 0px;
 			margin-top: 138px;
