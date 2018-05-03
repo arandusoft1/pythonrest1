@@ -107,7 +107,6 @@
 	    
 	    div .a {
 	    margin-left: 192px;
-	    margin-top: 138px;
 	    }
 	    
 	    div.sticky {
@@ -170,7 +169,7 @@
         <li><a href="/vigenciamayora24hs">Vigencia mayor a 24 hs</a></li>
       </ul>
 
-      <div style="margin-left:192;padding:1px 16px;height:1000px;" class="a">
+      <div style="padding:1px 16px;height:1000px;" class="a">
         
         <div align="center" id="fuente" >
           <h1>La ultima vigencia es {{ultact}} </h1>
