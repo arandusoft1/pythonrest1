@@ -20,6 +20,7 @@
 	    	max-width: 223px;
 	    	min-width: 223px;
 	    	top: 71px;
+		border-radius: 0px 15px 0px 0px;
 	    }
             
             li a {
