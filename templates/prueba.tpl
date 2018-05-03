@@ -15,9 +15,10 @@
                 background-color: #333333;
                 position: fixed;                
                 overflow: auto;
-	    	top: 71px;		
+	    	top: 71px;	    
 	    }
-	    ul .b {
+	    
+	    ul .algo {
             	max-width: 223px;
             	min-width: 223px;
 	    	width: 25%;
@@ -134,7 +135,7 @@
 	    }
 	    
 	    @media screen and (max-width: 600px) {
-  	    	ul .b {
+  	    	ul .algo {
             		width: 100%;
 			min-width: auto;
 			max-width: auto;
@@ -164,7 +165,7 @@
       </div>
       
       <div>
-      <ul id="fuente" class="b">
+      <ul id="fuente" class="algo">
         <li><a class="active" href="/index">Tabla completa</a></li>
         <li><a href="/UltimaVigencia">Ultima vigencia</a></li>
         <li><a href="/vigenciamenora24hs">Vigencia menor a 24 hs</a></li>
