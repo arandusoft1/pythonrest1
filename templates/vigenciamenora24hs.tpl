@@ -138,7 +138,7 @@
 	    @media screen and (max-width: 600px) {
   	    	ul {
             		width: 100%;
-			min-width: auto;
+			min-width: 305px;
 			max-width: unset;
 			height: 141px;
 			border-radius: 15px 15px 0px 0px;
