@@ -68,7 +68,11 @@
 	    #principal tr:hover {
 	    	background-color: #ddd;
             }
-	
+	    
+	    
+            #fuente {
+	    	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	    }
 	    
 	    
             table .rojo {
@@ -128,7 +132,7 @@
 
       <div style="margin-left:192;padding:1px 16px;height:1000px;">
         
-        <div align="center" style="font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;">
+        <div align="center" id="fuente">
           <h1>La ultima vigencia es {{ultact}} </h1>
         </div>
         
