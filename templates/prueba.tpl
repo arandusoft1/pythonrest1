@@ -47,7 +47,7 @@
                 border-collapse: collapse;
             }
             th, td {
-	    	border: 2px solid white;
+	    	border: 2px solid black;
                 border-collapse: collapse
                 padding: 5px;
                 font-weight: bold;
