@@ -47,7 +47,7 @@
                 border-collapse: collapse;
             }
             th, td {
-	    	border: 2px solid #ddd;
+	    	border: 2px solid white;
                 border-collapse: collapse
                 padding: 5px;
                 font-weight: bold;
@@ -77,7 +77,7 @@
                 background-color:#cece1e;
             }
             table .verde {
-                background-color:#118c11;
+                background-color:#4caf50;
             }
             table td:first-child {
                 width: 200px;
