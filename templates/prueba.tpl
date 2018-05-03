@@ -58,6 +58,12 @@
 	    	color: #fff;
 		background-color:#e14314;
             }
+	    #customers th, #customers td {
+                border: 1px solid #ddd;
+                border-collapse: collapse;
+            }
+	    
+	    
             table .rojo {
                 background-color:#bf5858;
             }
