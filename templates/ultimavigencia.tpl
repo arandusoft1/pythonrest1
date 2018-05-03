@@ -170,8 +170,8 @@
       <ul id="fuente">
         <li><a href="/index">Tabla completa</a></li>
         <li><a class="active" href="/UltimaVigencia">Ultima vigencia</a></li>
-        <li><a href="/vigenciamenora24hs">Vigencia menor a 24 hs</a></li>
-        <li><a href="/vigenciamayora24hs">Vigencia mayor a 24 hs</a></li>
+        <li><a href="/vigenciamenora24hs">Vigencia menor a 12 hs</a></li>
+        <li><a href="/vigenciamayora24hs">Vigencia mayor a 12 hs</a></li>
       </ul>
 
       <div style="padding:1px 16px;height:1000px;" class="a">
