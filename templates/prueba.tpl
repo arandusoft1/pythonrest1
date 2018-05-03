@@ -50,6 +50,10 @@
                 padding: 5px;
                 font-weight: bold;
             }
+	    #customers {
+	    	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	    }
+	    
 	    #principal td {
                 color: #000;
             }   	    
