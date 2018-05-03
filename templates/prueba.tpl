@@ -163,7 +163,7 @@
 	</table>
       </div>
       
-      <div>
+     
       <ul id="fuente" class="b">
         <li><a class="active" href="/index">Tabla completa</a></li>
         <li><a href="/UltimaVigencia">Ultima vigencia</a></li>
@@ -233,7 +233,6 @@
         </table>
         
         
-      </div>
       </div>
       
     </body>
