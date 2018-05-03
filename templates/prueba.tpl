@@ -43,7 +43,7 @@
             
 	    
             table, th, td {
-                border: 2px solid black;
+                border: 2px solid #ddd;
                 border-collapse: collapse;
             }
             th, td {
@@ -58,10 +58,7 @@
 	    	color: #fff;
 		background-color:#e14314;
             }
-	    #customers th, #customers td {
-                border: 1px solid #ddd;
-                border-collapse: collapse;
-            }
+	
 	    
 	    
             table .rojo {
