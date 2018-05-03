@@ -50,6 +50,7 @@
                 border: 2px solid black;
                 border-collapse: collapse;
 		font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+		min-width: 280px;
             }
             th, td {
 	    	border: 2px solid black;
