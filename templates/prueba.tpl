@@ -81,12 +81,21 @@
 	    table .foot {
 	            width: 750px;
             }
+	    
+	    div.sticky {
+	    	    position: -webkit-sticky;
+	    	    position: sticky;
+	    	    top: 0;
+	    	    padding: 5px;
+	    	    background-color: #cae8ca;
+	    	    border: 2px solid #4CAF50;
+            }
 	  
         </style>
     </head>
     <body bgcolor=#f1f1c1>
-      <div align="left" style="position:fixed">
-      		    <IMG src="https://github.com/arandusoft1/pythonrest1/blob/master/friarlogo.png?raw=true" border=0 width="220" height="61"></th>
+      <div class="sticky">
+      	<IMG src="https://github.com/arandusoft1/pythonrest1/blob/master/friarlogo.png?raw=true" border=0 width="220" height="61">
       </div>
       
       <div>
