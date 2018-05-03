@@ -8,7 +8,7 @@
             body {
               margin: 0;
             }
-            ul {
+            ul .a{
                 list-style-type: none;
                 margin: 0;
                 padding: 0;
@@ -130,7 +130,7 @@
 	    }
 	    
 	    @media screen and (max-width: 600px) {
-  	    	ul {
+  	    	ul .a {
             		width: 100%;
 			min-width: auto;
 			max-width: auto;
@@ -138,7 +138,7 @@
 			border-radius: 15px 15px 0px 0px;
             	}
 		
-		div a {
+		div .a {
 			margin-left: 0px;
 			margin-top: 138px;
 		}
@@ -160,16 +160,16 @@
       </div>
       
       <div>
-      <ul id="fuente">
+      <ul id="fuente" class="a">
         <li><a class="active" href="/index">Tabla completa</a></li>
         <li><a href="/UltimaVigencia">Ultima vigencia</a></li>
         <li><a href="/vigenciamenora24hs">Vigencia menor a 24 hs</a></li>
         <li><a href="/vigenciamayora24hs">Vigencia mayor a 24 hs</a></li>
       </ul>
 
-      <div style="margin-left:192;padding:1px 16px;height:1000px;">
+      <div style="margin-left:192;padding:1px 16px;height:1000px;" class="a">
         
-        <div align="center" id="fuente" class="a">
+        <div align="center" id="fuente" >
           <h1>La ultima vigencia es {{ultact}} </h1>
         </div>
         
