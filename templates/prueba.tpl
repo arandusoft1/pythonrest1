@@ -13,7 +13,7 @@
                 margin: 0;
                 padding: 0;
                 width: 25%;
-                background-color: #f1f1c1;
+                background-color: #333333;
                 position: fixed;
                 height: 100%;
                 overflow: auto;
@@ -24,7 +24,7 @@
             
             li a {
                 display: block;
-                color: #000;
+                color: #fffff0;
                 padding: 8px 16px;
                 text-decoration: none;
 		font-weight: bold;
@@ -37,7 +37,7 @@
             }
             
             li a:hover:not(.active) {
-                background-color: #555;
+                background-color: #111;
                 color: white;
             }
             
@@ -87,13 +87,13 @@
 	    	    position: sticky;
 	    	    top: 0;
 	    	    padding: 5px;
-	    	    background-color: #cae8ca;
-	    	    border: 2px solid #4CAF50;
+	    	    background-color: #ffffff;
+	    	    border: 0px solid #ffffff;
             }
 	  
         </style>
     </head>
-    <body bgcolor=#f1f1c1>
+    <body bgcolor=#fffff>
       <div class="sticky">
       	<IMG src="https://github.com/arandusoft1/pythonrest1/blob/master/friarlogo.png?raw=true" border=0 width="220" height="61">
       </div>
