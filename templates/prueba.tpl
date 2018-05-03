@@ -50,10 +50,10 @@
                 padding: 5px;
                 font-weight: bold;
             }
-	    td {
+	    #principal td {
                 color: #000;
             }   	    
-            th {
+            #principal th {
                 text-align: center;;
 	    	color: #fff;
 		background-color:#e14314;
@@ -119,7 +119,7 @@
           <h1>La ultima vigencia es {{ultact}} </h1>
 	      </div>
         
-        <table style="width:90%" align="center">
+        <table style="width:90%" align="center" id="principal">
             <tr>
                 <th>Empresa</th>
                 <th>Sucursal</th> 
