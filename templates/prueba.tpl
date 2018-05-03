@@ -105,7 +105,10 @@
 	            width: 750px;
             }
 	    
-	    
+	    div .a {
+	    margin-left: 192px;
+	    margin-top: 138px;
+	    }
 	    
 	    div.sticky {
 	    	position: -webkit-sticky;
