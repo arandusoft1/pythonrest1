@@ -108,19 +108,40 @@
 	    
 	    
 	    div.sticky {
-	    	    position: -webkit-sticky;
-	    	    position: sticky;
-	    	    top: 0;
-	    	    padding: 5px;
-	    	    background-color: #ffffff;
-	    	    border: 0px solid #ffffff;
+	    	position: -webkit-sticky;
+	    	position: sticky;
+	    	top: 0;
+	    	padding: 5px;
+	    	background-color: #ffffff;
+	    	border: 0px solid #ffffff;
             }
+	    
+	    #logo table {
+	    	border-collapse: collapse;
+            	border: 0px solid black;
+	    	width: 100%
+	    }
+	    #logo th {	
+            	text-align: left;
+	    	border: 0px solid black;
+	    }
+	    #logo img {
+            	min-height:20px
+	    }
+
+	 
 	  
         </style>
     </head>
     <body bgcolor=#fffff>
       <div class="sticky">
-      	<IMG src="https://github.com/arandusoft1/pythonrest1/blob/master/friarlogo.png?raw=true" border=0 width="220" height="61">
+      	<table id="logo">
+		<tr id="logo">
+			<th id="logo" align="center" style="padding-right: 0px;width: 200px;"><img id="logo" src="https://github.com/arandusoft1/pythonrest1/blob/master/logofriarconpata.png?raw=true" alt="Norway" style="float:left;width="100px"; height: 62px;"></th>
+			<th id="logo" style="padding-left: 0px; padding-right: 0px;"><img id="logo" src="https://github.com/arandusoft1/pythonrest1/blob/master/patafriar.png?raw=true" alt="Paris" style="float:left;width: 100%;margin-top: 41px;height: 120.703;height: 0px;"></th>
+			<th id="logo" style="padding-left: 0px;width: 9px;"><img id="logo" src="https://github.com/arandusoft1/pythonrest1/blob/master/tapadepata.png?raw=true" alt="Paris" style="float:left;width: 9px;margin-top: 41px;height: 120.703;height: 20px;"></th>
+		</tr>  
+	</table>
       </div>
       
       <div>
