@@ -360,12 +360,12 @@
         <li><a href="/vigenciamenora24hs">Vigencia menor a 24 hs</a></li>
         <li><a href="/vigenciamayora24hs">Vigencia mayor a 24 hs</a></li>
 	<li>
-		<form action="/action_page.php" style="margin-bottom: 0px;" >
+		<form action="/buscarsucursal" style="margin-bottom: 0px;" method="post">
 		
 			<div class="box">
 				<div class="container-4">
-					<input type="search" id="search" placeholder="Buscar sucursal..." />
-					<button class="icon"><i class="fa fa-search"></i></button>
+					<input name="sucursal" type="search" id="search" placeholder="Buscar sucursal..." />
+					<button type="submit" class="icon"><i class="fa fa-search"></i></button>
 				</div>
 			</div>
 			
