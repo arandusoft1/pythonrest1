@@ -6,99 +6,13 @@
 	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 	
         <style>
-	    
-	    .container-2{
-	    	  width: 300px;
-	    	  vertical-align: middle;
-	    	  white-space: nowrap;
-	    	  position: relative;
-	    }
-	    
-	    .container-2 input#search{
-		  width: 49px;
-		  height: 35px;
-		  background: #333;
-		  border: none;
-		  font-size: 10pt;
-		  float: left;
-		  color: #262626;
-		  padding-left: 35px;
-		  -webkit-border-radius: 5px;
-		  -moz-border-radius: 5px;
-		  border-radius: 0px;
-		  color: #fff;
-
-		  -webkit-transition: width .55s ease;
-		  -moz-transition: width .55s ease;
-		  -ms-transition: width .55s ease;
-		  -o-transition: width .55s ease;
-		  transition: width .55s ease;
-		  max-width: 223px;
-		  font-size: 16px;
-	     }
-	     
-	     .container-2 input#search::-webkit-input-placeholder {
-		   color: #65737e;
-	     }
-
-		.container-2 input#search:-moz-placeholder { /* Firefox 18- */
-		   color: #65737e;  
-		}
-
-		.container-2 input#search::-moz-placeholder {  /* Firefox 19+ */
-		   color: #65737e;  
-		}
-
-		.container-2 input#search:-ms-input-placeholder {  
-		   color: #65737e;  
-		}
-	      
-	      .container-2 .icon{
-		  position: absolute;
-		  top: 50%;
-		  margin-left: 10px;
-		  margin-top: 10px;
-		  z-index: 1;
-		  color: #fffff0;
-		  
-		  -webkit-transition: all .55s ease;
-  -moz-transition: all .55s ease;
-  -ms-transition: all .55s ease;
-  -o-transition: all .55s ease;
-  transition: all .55s ease;
-		}
-	    
-	    .container-2 input#search:focus, .container-2 input#search:active{
-		  outline:none;
-		  width: 300px;
-	    }
-
-		.container-2:hover input#search{
-		width: 300px;
-		background: #111111
-		}
-
-		.container-2:hover .icon{
-		  color: #93a2ad;
-		  
-		  
-		  -webkit-transform:scale(1.5); /* Safari and Chrome */
-  -moz-transform:scale(1.5); /* Firefox */
-  -ms-transform:scale(1.5); /* IE 9 */
-  -o-transform:scale(1.5); /* Opera */
-   transform:scale(1.5);
-		}
-		
-		
-		
-		.container-4{
+	    	
+.container-4{
   overflow: hidden;
   width: 300px;
   vertical-align: middle;
   white-space: nowrap;
 }
-
-
 .container-4 input#search{
   width: 300px;
   height: 35px;
@@ -113,8 +27,6 @@
   border-radius: 5px;
   max-width: 221px;
 }
-
-
 .container-4 input#search::-webkit-input-placeholder {
    color: #fffff0;
 }
@@ -130,8 +42,6 @@
 .container-4 input#search:-ms-input-placeholder {  
    color: #fffff0;
 }
-
-
 .container-4 button.icon{
   -webkit-border-top-right-radius: 5px;
   -webkit-border-bottom-right-radius: 5px;
@@ -154,9 +64,6 @@
   -o-transition: all .55s ease;
   transition: all .55s ease;
 }
-
-
-
 .container-4:hover button.icon, .container-4:active button.icon, .container-4:focus button.icon{
     outline: none;
     opacity: 1;
@@ -166,17 +73,12 @@
   .container-4:hover button.icon:hover{
     background: white;
   }
-
 .container-4:hover input#search{
 		background: #111111
-		}
+		}		
+		
+		
 
-
-
-
-	    
-	    
-	    	    
             body {
               margin: 0;
             }
@@ -222,6 +124,7 @@
                 border: 2px solid black;
                 border-collapse: collapse;
 		font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+		min-width: 280px;
             }
             th, td {
 	    	border: 2px solid black;
@@ -309,7 +212,7 @@
 	    @media screen and (max-width: 600px) {
   	    	ul {
             		width: 100%;
-			min-width: auto;
+			min-width: 305px;
 			max-width: unset;
 			height: 141px;
 			border-radius: 15px 15px 0px 0px;
@@ -320,8 +223,9 @@
 		div .a {
 			margin-left: 0px;
 			margin-top: 138px;
-	    	}
+		}
             }
+	    
 	    
 	    input[type=search] {
 	    	border: 1px dotted #999;
@@ -337,9 +241,12 @@
                 font-weight: bolder;
 		width: 129px;
 	    }
+	    
+	    
+	    
 
-	    
-	    
+	 
+	  
         </style>
     </head>
     <body bgcolor=#fffff>
@@ -357,8 +264,8 @@
       <ul id="fuente">
         <li><a href="/index">Tabla completa</a></li>
         <li><a href="/UltimaVigencia">Ultima vigencia</a></li>
-        <li><a href="/vigenciamenora24hs">Vigencia menor a 24 hs</a></li>
-        <li><a href="/vigenciamayora24hs">Vigencia mayor a 24 hs</a></li>
+        <li><a href="/vigenciamenora24hs">Vigencia menor a 12 hs</a></li>
+        <li><a href="/vigenciamayora24hs">Vigencia mayor a 12 hs</a></li>
 	<li>
 		<form action="/buscarsucursal" style="margin-bottom: 0px;" method="post">
 		
@@ -375,7 +282,7 @@
 
       <div style="padding:1px 16px;height:1000px;" class="a">
         
-        <div align="center" id="fuente" >
+        <div align="center" id="fuente" style="min-width: 272px;">
           <h1>La ultima vigencia es {{ultact}} </h1>
         </div>
         
@@ -426,10 +333,10 @@
             <th style="text-align:left; border: hidden"><font color="#118c11">■</font>&nbspUltima vigencia</th>
           </tr>
           <tr style="border: hidden">
-            <td style="border: hidden"><font color="#cece1e">■</font>&nbspVigencia menor a 24 hs sin actualizar</td>
+            <td style="border: hidden"><font color="#cece1e">■</font>&nbspVigencia menor a 12 hs sin actualizar</td>
           </tr>
           <tr style="border: hidden">
-            <td style="border: hidden"><font color="#bf5858">■</font>&nbspVigencia mayor a 24 hs sin actualizar</td>
+            <td style="border: hidden"><font color="#bf5858">■</font>&nbspVigencia mayor a 12 hs sin actualizar</td>
           </tr>
           
         </table>
