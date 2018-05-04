@@ -194,7 +194,6 @@
 		padding-left:48px;
 		padding-top:1px;
 		font-size:22px;color:blue;
-		background-image:url('images/search.jpg');
 		background-repeat:no-repeat;
 		background-position:center;outline:0;
 	   }
