@@ -17,7 +17,7 @@
 	    .container-2 input#search{
 		  width: 49px;
 		  height: 35px;
-		  background: #111;
+		  background: #333;
 		  border: none;
 		  font-size: 10pt;
 		  float: left;
