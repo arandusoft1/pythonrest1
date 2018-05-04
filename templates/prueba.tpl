@@ -56,6 +56,59 @@
 	    	color: #4f5b66;
 	    }
 	    
+	    .container-2{
+	    	  width: 300px;
+	    	  vertical-align: middle;
+	    	  white-space: nowrap;
+	    	  position: relative;
+	    }
+	    
+	    .container-2 input#search{
+		  width: 50px;
+		  height: 50px;
+		  background: #2b303b;
+		  border: none;
+		  font-size: 10pt;
+		  float: left;
+		  color: #262626;
+		  padding-left: 35px;
+		  -webkit-border-radius: 5px;
+		  -moz-border-radius: 5px;
+		  border-radius: 5px;
+		  color: #fff;
+
+		  -webkit-transition: width .55s ease;
+		  -moz-transition: width .55s ease;
+		  -ms-transition: width .55s ease;
+		  -o-transition: width .55s ease;
+		  transition: width .55s ease;
+	     }
+	     
+	     .container-2 input#search::-webkit-input-placeholder {
+		   color: #65737e;
+	     }
+
+		.container-2 input#search:-moz-placeholder { /* Firefox 18- */
+		   color: #65737e;  
+		}
+
+		.container-2 input#search::-moz-placeholder {  /* Firefox 19+ */
+		   color: #65737e;  
+		}
+
+		.container-2 input#search:-ms-input-placeholder {  
+		   color: #65737e;  
+		}
+	      
+	      .container-2 .icon{
+		  position: absolute;
+		  top: 50%;
+		  margin-left: 17px;
+		  margin-top: 17px;
+		  z-index: 1;
+		  color: #4f5b66;
+		}
+	    
 	    
 	    	    
             body {
@@ -247,6 +300,12 @@
 			
 			<div class="box">
 			  <div class="container-1">
+			      <span class="icon"><i class="fa fa-search"></i></span>
+			      <input type="search" id="search" placeholder="Search..." />
+			  </div>
+			</div>
+			<div class="box">
+			  <div class="container-2">
 			      <span class="icon"><i class="fa fa-search"></i></span>
 			      <input type="search" id="search" placeholder="Search..." />
 			  </div>
