@@ -104,7 +104,7 @@
   height: 35px;
   background: #333333;
   border: none;
-  font-size: 13pt;
+  font-size: 12pt;
   float: left;
   color: #65737e;
   padding-left: 15px;
