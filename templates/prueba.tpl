@@ -40,7 +40,14 @@
 	    	color: #65737e;  
 	    }
 	    
-	    
+	    .container-1 .icon{
+	    	position: absolute;
+	    	top: 50%;
+	    	margin-left: 17px;
+	    	margin-top: 17px;
+	    	z-index: 1;
+	    	color: #4f5b66;
+	    }
 	    
 	    
 	    	    
