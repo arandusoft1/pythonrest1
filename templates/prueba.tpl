@@ -187,7 +187,29 @@
 	    	
 	    	background-position: top left;
 	    }
-            
+	    
+	    
+	    #Search{
+		width:480px;height:49px; border:3px solid black;
+		padding-left:48px;
+		padding-top:1px;
+		font-size:22px;color:blue;
+		background-image:url('images/search.jpg');
+		background-repeat:no-repeat;
+		background-position:center;outline:0;
+	   }
+
+	   #Search::-webkit-search-cancel-button{
+		    position:relative;
+		    right:20px;  
+
+		    -webkit-appearance: none;
+		    height: 20px;
+		    width: 20px;
+
+		    background: red;
+          }
+
 	    
 	    
         </style>
@@ -213,6 +235,7 @@
 		<form action="/action_page.php">
 			<input class="ejemplo1" type="search" name="FirstName" placeholder="Buscar Sucursal">
 			<input type="submit" value="Buscar">
+			<input id="Search" name="Search" type="search" placeholder="Searh" />
 		</form> 
 	</li>
       </ul>
