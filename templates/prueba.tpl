@@ -189,7 +189,7 @@
         <li><a href="/vigenciamayora24hs">Vigencia mayor a 24 hs</a></li>
 	<li>
 		<form action="/action_page.php">
-			<input type="search" name="FirstName" value="Buscar Sucursal">
+			<input type="search" name="FirstName" placeholder="Buscar Sucursal">
 			<input type="submit" value="Buscar">
 		</form> 
 	</li>
