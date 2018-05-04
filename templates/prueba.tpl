@@ -75,10 +75,12 @@
 
 		.container-2:hover input#search{
 		width: 300px;
+		background: #111111
 		}
 
 		.container-2:hover .icon{
 		  color: #93a2ad;
+		  
 		  
 		  -webkit-transform:scale(1.5); /* Safari and Chrome */
   -moz-transform:scale(1.5); /* Firefox */
