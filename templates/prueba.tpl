@@ -171,15 +171,13 @@
 	    }
 	    
 	    .ejemplo1::-webkit-search-cancel-button:after {
-	    	content: '';
+	    	content: 'del';
 	    	display: block;
-	    	
+	    	position:absolute;
 	    	
 	    	width: 14px;
 	    	height: 10px;
 	    	
-	    	
-	    	background-image: url(https://github.com/arandusoft1/pythonrest1/blob/master/cancelarinput.png?raw=true)
 	    	
 	    	background-repeat: no-repeat;
 	    	
