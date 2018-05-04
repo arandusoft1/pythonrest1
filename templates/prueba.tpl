@@ -153,8 +153,8 @@
 	    
 	    input[type=search] {
 	    	border: 1px dotted #999;
-	    	border-radius: 0;
-	    	-webkit-appearance: none;
+	    	border-radius: 8px;
+	    	-webkit-appearance: button-bevel;
 	    }
 
 	 
@@ -180,7 +180,7 @@
         <li><a href="/vigenciamayora24hs">Vigencia mayor a 24 hs</a></li>
 	<li>
 		<form action="/action_page.php">
-			Buscar: <input type="search" name="FirstName" value="Sucursal"><br>
+			<input type="search" name="FirstName" value="Sucursal">
 			<input type="submit" value="Buscar">
 		</form> 
 	</li>
