@@ -16,7 +16,7 @@
 	    
 	    .container-2 input#search{
 		  width: 49px;
-		  height: 50px;
+		  height: 35px;
 		  background: #111;
 		  border: none;
 		  font-size: 10pt;
@@ -34,6 +34,7 @@
 		  -o-transition: width .55s ease;
 		  transition: width .55s ease;
 		  max-width: 223px;
+		  font-size: 16px;
 	     }
 	     
 	     .container-2 input#search::-webkit-input-placeholder {
@@ -56,7 +57,7 @@
 		  position: absolute;
 		  top: 50%;
 		  margin-left: 10px;
-		  margin-top: 18px;
+		  margin-top: 10px;
 		  z-index: 1;
 		  color: #fffff0;
 		}
@@ -259,9 +260,6 @@
         <li><a href="/vigenciamayora24hs">Vigencia mayor a 24 hs</a></li>
 	<li>
 		<form action="/action_page.php" style="margin-bottom: 0px;" >
-			<input type="search" name="FirstName" placeholder="Buscar Sucursal">
-			<input type="submit" value="Buscar">
-			
 			<div class="box">
 			  <div class="container-2">
 			      <span class="icon"><i class="fa fa-search"></i></span>
