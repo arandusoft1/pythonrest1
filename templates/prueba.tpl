@@ -109,6 +109,18 @@
 		  color: #4f5b66;
 		}
 	    
+	    .container-2 input#search:focus, .container-2 input#search:active{
+		  outline:none;
+		  width: 300px;
+	    }
+
+		.container-2:hover input#search{
+		width: 300px;
+		}
+
+		.container-2:hover .icon{
+		  color: #93a2ad;
+		}
 	    
 	    	    
             body {
