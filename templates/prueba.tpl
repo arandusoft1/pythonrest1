@@ -80,7 +80,6 @@
 		.container-2:hover .icon{
 		  color: #93a2ad;
 		  
-		  margin-top: 16px;
 		  -webkit-transform:scale(1.5); /* Safari and Chrome */
   -moz-transform:scale(1.5); /* Firefox */
   -ms-transform:scale(1.5); /* IE 9 */
@@ -279,15 +278,7 @@
 			      <span class="icon"><i class="fa fa-search"></i></span>
 			      <input type="search" id="search" placeholder="Buscar Sucursal..." />
 			  </div>
-			</div>
-			
-			<div class="box">
-  <div class="container-3">
-      <span class="icon"><i class="fa fa-search"></i></span>
-      <input type="search" id="search" placeholder="Search..." />
-  </div>
-</div>
-			
+			</div>			
 		</form> 
 	</li>
       </ul>
