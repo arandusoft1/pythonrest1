@@ -75,6 +75,78 @@
 		  color: #93a2ad;
 		}
 	    
+	    .container-3{
+  width: 300px;
+  vertical-align: middle;
+  white-space: nowrap;
+  position: relative;
+}
+ 
+.container-3 input#search{
+  width: 300px;
+  height: 50px;
+  background: #2b303b;
+  border: none;
+  font-size: 10pt;
+  float: left;
+  color: #262626;
+  padding-left: 45px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.container-3 input#search::-webkit-input-placeholder {
+   color: #65737e;
+}
+ 
+.container-3 input#search:-moz-placeholder { /* Firefox 18- */
+   color: #65737e;  
+}
+ 
+.container-3 input#search::-moz-placeholder {  /* Firefox 19+ */
+   color: #65737e;  
+}
+ 
+.container-3 input#search:-ms-input-placeholder {  
+   color: #65737e;  
+}
+
+
+.container-3 .icon{
+  position: absolute;
+  top: 50%;
+  margin-left: 17px;
+  margin-top: 17px;
+  z-index: 1;
+  color: #4f5b66;
+ 
+   -webkit-transition: all .55s ease;
+  -moz-transition: all .55s ease;
+  -ms-transition: all .55s ease;
+  -o-transition: all .55s ease;
+  transition: all .55s ease;
+}
+
+.container-3 input#search:focus, .container-3 input#search:active{
+    outline:none; 
+}
+ 
+.container-3:hover .icon{
+  margin-top: 16px;
+  color: #93a2ad;
+ 
+  -webkit-transform:scale(1.5); /* Safari and Chrome */
+  -moz-transform:scale(1.5); /* Firefox */
+  -ms-transform:scale(1.5); /* IE 9 */
+  -o-transform:scale(1.5); /* Opera */
+   transform:scale(1.5);
+  }
+	    
+	    
+	    
+	    
 	    	    
             body {
               margin: 0;
@@ -266,6 +338,13 @@
 			      <input type="search" id="search" placeholder="Buscar Sucursal..." />
 			  </div>
 			</div>
+			
+			<div class="box">
+  <div class="container-3">
+      <span class="icon"><i class="fa fa-search"></i></span>
+      <input type="search" id="search" placeholder="Search..." />
+  </div>
+</div>
 			
 		</form> 
 	</li>
