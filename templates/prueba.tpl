@@ -156,7 +156,8 @@
 	    	border-radius: 8px;
 	    	-webkit-appearance: button-bevel;
 		font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-		
+		margin-left: 14px;
+		margin-top: 6px;
 	    }
 
 	 
