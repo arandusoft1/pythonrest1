@@ -166,6 +166,9 @@
     background: white;
   }
 
+.container-2:hover input#search{
+		background: #111111
+		}
 
 
 
