@@ -164,29 +164,7 @@
 	    	font-size: 15px;
                 font-weight: bolder;
 		width: 129px;
-	    }
-	    
-	    :not(.default)::-webkit-search-cancel-button {
-    	    	-webkit-appearance: none;
-	    }
-	    
-	    .ejemplo1::-webkit-search-cancel-button:after {
-	    	content: '';
-	    	display: block;
-	    	
-	    	
-	    	width: 14px;
-	    	height: 10px;
-	    	
-		
-		background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAZdEVYdFNvZnR3YXJlAHBhaW50Lm5ldCA0LjAuMjHxIGmVAAAB7UlEQVRYR8WXTU7DMBCFET8rrkCvA5cA9UqVuAFwgK5hQxcgjgASrOAchPe5nchJPLYTJeJJn1SMPW9qj3961DTNGC7EWmzEVjwf4DNt/I8+qbFJko09TsW1eBG/oiT6vArGMDYVsyXZGHEp3sVUMfZKpGIHko3iTNyKmm9cEjGIRcyB16BBnItHMbeISeyOX+cPQZZLmJuI3ZmJ2ByYqqWFR+sZm1Nwc6x5SXi0hWnmbJdStf+It/3HrOhD35w+RNiilgB7NqcvsRLH4p4GRw/iRND3k4aMbkSbAIeMJ74NAa2vl4SZWz/G5GaCwyokwNGZW3umFFMLDBjFSfTNgTG5JcNzRUfO75IwSyWBsWd+J0pa05lLpEZeElPN0YYB3GS1SiURM8YcbRnEdTpGXhJjzdFuSgKpNQfa4sKsUUhgzBJ45gazMCaJsAS1RehVe385xiQRirBmG3rmGKVqojaJsA1rDiLP3OQlUXUQAceip9qjuJ9E9VEMpcuIi4WAnrnJkqDvqMto7uv4e//R1eA6Bh4JuVqYS3gMHiTGvz7JYOlH6ZPIPkphqWc55sVnuUGWTNUcNUEMYnW+uTFo6EGxULFTxdhJP81i2C7sWQ6OmhmhD30ZE7ZajmRjBg6Y+Of57kD88zw+NQs0R3/AOoHQu91UtgAAAABJRU5ErkJggg==)
-	    	
-	    	background-repeat: no-repeat;
-	    	
-	    	background-size: 10px;
-	    	
-	    	background-position: top left;
-	    }
+	    }	    
 	    
 	    
 	    #Search{
@@ -233,7 +211,7 @@
         <li><a href="/vigenciamayora24hs">Vigencia mayor a 24 hs</a></li>
 	<li>
 		<form action="/action_page.php">
-			<input class="ejemplo1" type="search" name="FirstName" placeholder="Buscar Sucursal">
+			<input type="search" name="FirstName" placeholder="Buscar Sucursal">
 			<input type="submit" value="Buscar">
 			<input id="Search" name="Search" type="search" placeholder="Searh" />
 		</form> 
