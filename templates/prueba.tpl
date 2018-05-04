@@ -101,16 +101,17 @@
 
 .container-4 input#search{
   width: 300px;
-  height: 50px;
-  background: #2b303b;
+  height: 35px;
+  background: #333333;
   border: none;
-  font-size: 10pt;
+  font-size: 12pt;
   float: left;
   color: #fff;
   padding-left: 15px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
+  max-width: 233px;
 }
 
 
@@ -139,13 +140,13 @@
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
  
-  border: none;
+  border: 1px solid black;
   background: #232833;
-  height: 50px;
+  height: 35px;
   width: 50px;
-  color: #4f5b66;
+  color: #e14314;
   opacity: 0;
-  font-size: 10pt;
+  font-size: 13pt;
  
   -webkit-transition: all .55s ease;
   -moz-transition: all .55s ease;
@@ -360,19 +361,13 @@
         <li><a href="/vigenciamayora24hs">Vigencia mayor a 24 hs</a></li>
 	<li>
 		<form action="/action_page.php" style="margin-bottom: 0px;" >
+		
 			<div class="box">
-			  <div class="container-2">
-			      <span class="icon"><i class="fa fa-search"></i></span>
-			      <input type="search" id="search" placeholder="Buscar Sucursal..." />
-			  </div>
-			</div>	
-			
-			<div class="box">
-  <div class="container-4">
-    <input type="search" id="search" placeholder="Search..." />
-    <button class="icon"><i class="fa fa-search"></i></button>
-  </div>
-</div>
+				<div class="container-4">
+					<input type="search" id="search" placeholder="Buscar sucursal..." />
+					<button class="icon"><i class="fa fa-search"></i></button>
+				</div>
+			</div>
 			
 		</form> 
 	</li>
