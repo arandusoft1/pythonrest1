@@ -166,7 +166,7 @@
 		width: 129px;
 	    }
 	    
-	    .ejemplo::-webkit-search-cancel-button {
+	    .ejemplo1::-webkit-search-cancel-button {
     	    	-webkit-appearance: none;
 	    }
 	    
