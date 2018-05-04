@@ -3,7 +3,80 @@
     	<title>Tabla de vigencias</title>
 	<link rel="icon" type="image/png" href="https://github.com/arandusoft1/pythonrest1/blob/master/favicon.png?raw=true" />
 	
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+	
         <style>
+	
+.container-4{
+  overflow: hidden;
+  width: 300px;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+.container-4 input#search{
+  width: 300px;
+  height: 35px;
+  background: #333333;
+  border: none;
+  font-size: 12pt;
+  float: left;
+  color: #65737e;
+  padding-left: 15px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  max-width: 221px;
+}
+.container-4 input#search::-webkit-input-placeholder {
+   color: #fffff0;
+}
+ 
+.container-4 input#search:-moz-placeholder { /* Firefox 18- */
+   color: #fffff0;  
+}
+ 
+.container-4 input#search::-moz-placeholder {  /* Firefox 19+ */
+   color: #fffff0;  
+}
+ 
+.container-4 input#search:-ms-input-placeholder {  
+   color: #fffff0;
+}
+.container-4 button.icon{
+  -webkit-border-top-right-radius: 5px;
+  -webkit-border-bottom-right-radius: 5px;
+  -moz-border-radius-topright: 5px;
+  -moz-border-radius-bottomright: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+ 
+  border: 1px solid black;
+  background: #333333;
+  height: 35px;
+  width: 50px;
+  color: #e14314;
+  opacity: 0;
+  font-size: 13pt;
+ 
+  -webkit-transition: all .55s ease;
+  -moz-transition: all .55s ease;
+  -ms-transition: all .55s ease;
+  -o-transition: all .55s ease;
+  transition: all .55s ease;
+}
+.container-4:hover button.icon, .container-4:active button.icon, .container-4:focus button.icon{
+    outline: none;
+    opacity: 1;
+    margin-left: -50px;
+  }
+ 
+  .container-4:hover button.icon:hover{
+    background: white;
+  }
+.container-4:hover input#search{
+		background: #111111
+		}		
+
 	    	    
             body {
               margin: 0;
@@ -153,6 +226,22 @@
             }
 	 
 	  
+  input[type=search] {
+	    	border: 1px dotted #999;
+	    	border-radius: 8px;
+	    	-webkit-appearance: button-bevel;
+	    	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	    	margin-left: 0px;
+	    	margin-top: 0px;
+	    	background-color: #333333;
+	    	outline-color: #333333;
+	    	color: ivory;
+	    	font-size: 15px;
+                font-weight: bolder;
+		width: 129px;
+	    }
+	  
+	  
         </style>
     </head>
     <body bgcolor=#fffff>
@@ -172,6 +261,19 @@
         <li><a href="/UltimaVigencia">Ultima vigencia</a></li>
         <li><a href="/vigenciamenora24hs">Vigencia menor a 12 hs</a></li>
         <li><a class="active" href="/vigenciamayora24hs">Vigencia mayor a 12 hs</a></li>
+	<li>
+		<form action="/buscarsucursal" style="margin-bottom: 0px;" method="post">
+		
+			<div class="box">
+				<div class="container-4">
+					<input name="sucursal" type="search" id="search" placeholder="Buscar sucursal..." />
+					<button type="submit" class="icon"><i class="fa fa-search"></i></button>
+				</div>
+			</div>
+			
+		</form> 
+	</li>
+	
       </ul>
 
       <div style="padding:1px 16px;height:1000px;" class="a">
