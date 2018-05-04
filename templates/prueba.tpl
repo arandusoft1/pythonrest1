@@ -166,18 +166,20 @@
 		width: 129px;
 	    }
 	    
-	    .ejemplo1::-webkit-search-cancel-button {
+	    :not(.default)::-webkit-search-cancel-button {
     	    	-webkit-appearance: none;
 	    }
 	    
 	    .ejemplo1::-webkit-search-cancel-button:after {
-	    	content: 'del';
+	    	content: '';
 	    	display: block;
-	    	position:absolute;
+	    	
 	    	
 	    	width: 14px;
 	    	height: 10px;
 	    	
+		
+		background-image:url(data:image/png;base64,https://github.com/arandusoft1/pythonrest1/blob/master/cancelarinput.png?raw=true)
 	    	
 	    	background-repeat: no-repeat;
 	    	
