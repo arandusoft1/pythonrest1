@@ -155,9 +155,13 @@
 	    	border: 1px dotted #999;
 	    	border-radius: 8px;
 	    	-webkit-appearance: button-bevel;
-		font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-		margin-left: 14px;
-		margin-top: 6px;
+	    	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	    	margin-left: 14px;
+	    	margin-top: 6px;
+	    	background-color: #333333;
+	    	outline-color: white;
+	    	color: ivory;
+	    	font-size: 17px;
 	    }
 
 	 
