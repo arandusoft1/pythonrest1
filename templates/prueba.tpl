@@ -3,7 +3,46 @@
     	<title>Tabla de vigencias</title>
 	<link rel="icon" type="image/png" href="https://github.com/arandusoft1/pythonrest1/blob/master/favicon.png?raw=true" />
 	
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+	
         <style>
+	    
+	    .container-1{
+	    	width: 300px;
+	    	vertical-align: middle;
+	    	white-space: nowrap;
+	    	position: relative;
+	    }	    
+	    .container-1 input#search{
+	    	  width: 300px;
+	    	  height: 50px;
+	    	  background: #2b303b;
+	    	  border: none;
+	    	  font-size: 10pt;
+	    	  float: left;
+	    	  color: #63717f;
+	    	  padding-left: 45px;
+	    	  -webkit-border-radius: 5px;
+	    	  -moz-border-radius: 5px;
+	    	  border-radius: 5px;
+	    }
+	    .container-1 input#search::-webkit-input-placeholder {
+	    	   color: #65737e;
+	    }            
+	    .container-1 input#search:-moz-placeholder { /* Firefox 18- */
+	    	color: #65737e;  
+	    }
+            
+	    .container-1 input#search::-moz-placeholder {  /* Firefox 19+ */
+	    	color: #65737e;  
+	    }
+            .container-1 input#search:-ms-input-placeholder {  
+	    	color: #65737e;  
+	    }
+	    
+	    
+	    
+	    
 	    	    
             body {
               margin: 0;
@@ -191,6 +230,14 @@
 		<form action="/action_page.php">
 			<input type="search" name="FirstName" placeholder="Buscar Sucursal">
 			<input type="submit" value="Buscar">
+			
+			<div class="box">
+			  <div class="container-1">
+			      <span class="icon"><i class="fa fa-search"></i></span>
+			      <input type="search" id="search" placeholder="Search..." />
+			  </div>
+			</div>
+			
 		</form> 
 	</li>
       </ul>
