@@ -20,11 +20,18 @@
 	    	  border: none;
 	    	  font-size: 10pt;
 	    	  float: left;
-	    	  color: #63717f;
+	    	  color: #262626;
 	    	  padding-left: 45px;
 	    	  -webkit-border-radius: 5px;
 	    	  -moz-border-radius: 5px;
 	    	  border-radius: 5px;
+            
+            
+	    	    -webkit-transition: background .55s ease;
+	    	  -moz-transition: background .55s ease;
+	    	  -ms-transition: background .55s ease;
+	    	  -o-transition: background .55s ease;
+	    	  transition: background .55s ease;
 	    }
 	    .container-1 input#search::-webkit-input-placeholder {
 	    	   color: #65737e;
