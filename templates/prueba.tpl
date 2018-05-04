@@ -148,7 +148,7 @@
 		div .a {
 			margin-left: 0px;
 			margin-top: 138px;
-		}
+	    	}
             }
 	    
 	    input[type=search] {
@@ -161,11 +161,12 @@
 	    	background-color: #333333;
 	    	outline-color: white;
 	    	color: ivory;
-	    	font-size: 17px;
+	    	font-size: 15px;
+                font-weight: bolder;
 	    }
-
-	 
-	  
+            
+	    
+	    
         </style>
     </head>
     <body bgcolor=#fffff>
