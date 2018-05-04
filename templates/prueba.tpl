@@ -226,7 +226,7 @@
 	    	-webkit-appearance: button-bevel;
 	    	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
 	    	margin-left: 0px;
-	    	margin-top: 7px;
+	    	margin-top: 0px;
 	    	background-color: #333333;
 	    	outline-color: #333333;
 	    	color: ivory;
@@ -257,7 +257,7 @@
         <li><a href="/vigenciamenora24hs">Vigencia menor a 24 hs</a></li>
         <li><a href="/vigenciamayora24hs">Vigencia mayor a 24 hs</a></li>
 	<li>
-		<form action="/action_page.php">
+		<form action="/action_page.php" style="margin-bottom: 0px;" >
 			<input type="search" name="FirstName" placeholder="Buscar Sucursal">
 			<input type="submit" value="Buscar">
 			
