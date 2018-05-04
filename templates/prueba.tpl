@@ -166,6 +166,10 @@
 		width: 129px;
 	    }
 	    
+	    ::-webkit-search-cancel-button {
+    	    	-webkit-appearance: none;
+	    }
+	    
 	    .ejemplo1::-webkit-search-cancel-button:after {
 	    	content: '';
 	    	display: block;
