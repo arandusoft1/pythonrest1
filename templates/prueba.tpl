@@ -33,6 +33,7 @@
 		  -ms-transition: width .55s ease;
 		  -o-transition: width .55s ease;
 		  transition: width .55s ease;
+		  max-width: 223px;
 	     }
 	     
 	     .container-2 input#search::-webkit-input-placeholder {
@@ -262,15 +263,9 @@
 			<input type="submit" value="Buscar">
 			
 			<div class="box">
-			  <div class="container-1">
-			      <span class="icon"><i class="fa fa-search"></i></span>
-			      <input type="search" id="search" placeholder="Buscar sucursal" />
-			  </div>
-			</div>
-			<div class="box">
 			  <div class="container-2">
 			      <span class="icon"><i class="fa fa-search"></i></span>
-			      <input type="search" id="search" placeholder="Search..." />
+			      <input type="search" id="search" placeholder="Buscar Sucursal..." />
 			  </div>
 			</div>
 			
