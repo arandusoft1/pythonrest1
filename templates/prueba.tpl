@@ -172,6 +172,12 @@
         <li><a href="/UltimaVigencia">Ultima vigencia</a></li>
         <li><a href="/vigenciamenora24hs">Vigencia menor a 24 hs</a></li>
         <li><a href="/vigenciamayora24hs">Vigencia mayor a 24 hs</a></li>
+	<li>
+		<form action="/action_page.php">
+			Sucurasal: <input type="text" name="FirstName" value="Mickey"><br>
+			<input type="submit" value="Buscar">
+		</form> 
+	</li>
       </ul>
 
       <div style="padding:1px 16px;height:1000px;" class="a">
