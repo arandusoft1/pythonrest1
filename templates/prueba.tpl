@@ -155,6 +155,8 @@
 	    	border: 1px dotted #999;
 	    	border-radius: 8px;
 	    	-webkit-appearance: button-bevel;
+		font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+		
 	    }
 
 	 
@@ -180,7 +182,7 @@
         <li><a href="/vigenciamayora24hs">Vigencia mayor a 24 hs</a></li>
 	<li>
 		<form action="/action_page.php">
-			<input type="search" name="FirstName" value="Sucursal">
+			<input type="search" name="FirstName" value="Buscar Sucursal">
 			<input type="submit" value="Buscar">
 		</form> 
 	</li>
