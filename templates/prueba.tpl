@@ -204,6 +204,8 @@
 		    right:20px;  
 
 		    -webkit-appearance: none;
+		    height: 20px;
+		    width: 20px;
 		   background-image: url(https://github.com/arandusoft1/pythonrest1/blob/master/cancelarinput.png?raw=true)
           }
 
