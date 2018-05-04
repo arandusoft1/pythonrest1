@@ -15,7 +15,7 @@
 	    }
 	    
 	    .container-2 input#search{
-		  width: 50px;
+		  width: 49px;
 		  height: 50px;
 		  background: #111;
 		  border: none;
@@ -25,7 +25,7 @@
 		  padding-left: 35px;
 		  -webkit-border-radius: 5px;
 		  -moz-border-radius: 5px;
-		  border-radius: 5px;
+		  border-radius: 0px;
 		  color: #fff;
 
 		  -webkit-transition: width .55s ease;
@@ -264,7 +264,7 @@
 			<div class="box">
 			  <div class="container-1">
 			      <span class="icon"><i class="fa fa-search"></i></span>
-			      <input type="search" id="search" placeholder="Search..." />
+			      <input type="search" id="search" placeholder="Buscar sucursal" />
 			  </div>
 			</div>
 			<div class="box">
