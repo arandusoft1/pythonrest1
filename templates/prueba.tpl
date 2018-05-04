@@ -157,12 +157,13 @@
 	    	-webkit-appearance: button-bevel;
 	    	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
 	    	margin-left: 14px;
-	    	margin-top: 6px;
+	    	margin-top: 7px;
 	    	background-color: #333333;
 	    	outline-color: white;
 	    	color: ivory;
 	    	font-size: 15px;
                 font-weight: bolder;
+		width: 129px;
 	    }
             
 	    
