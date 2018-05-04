@@ -141,7 +141,7 @@
   border-bottom-right-radius: 5px;
  
   border: 1px solid black;
-  background: #232833;
+  background: #333333;
   height: 35px;
   width: 50px;
   color: #e14314;
