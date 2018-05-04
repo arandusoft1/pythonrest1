@@ -159,11 +159,29 @@
 	    	margin-left: 14px;
 	    	margin-top: 7px;
 	    	background-color: #333333;
-	    	outline-color: white;
+	    	outline-color: #333333;
 	    	color: ivory;
 	    	font-size: 15px;
                 font-weight: bolder;
 		width: 129px;
+	    }
+	    
+	    .ejemplo1::-webkit-search-cancel-button:after {
+	    	content: '';
+	    	display: block;
+	    	
+	    	
+	    	width: 14px;
+	    	height: 10px;
+	    	
+	    	
+	    	background-image: url(https://github.com/arandusoft1/pythonrest1/blob/master/cancelarinput.png?raw=true)
+	    	
+	    	background-repeat: no-repeat;
+	    	
+	    	background-size: 10px;
+	    	
+	    	background-position: top left;
 	    }
             
 	    
@@ -189,7 +207,7 @@
         <li><a href="/vigenciamayora24hs">Vigencia mayor a 24 hs</a></li>
 	<li>
 		<form action="/action_page.php">
-			<input type="search" name="FirstName" placeholder="Buscar Sucursal">
+			<input class="ejemplo1" type="search" name="FirstName" placeholder="Buscar Sucursal">
 			<input type="submit" value="Buscar">
 		</form> 
 	</li>
