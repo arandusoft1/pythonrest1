@@ -191,6 +191,7 @@
 		width:480px;height:49px; border:3px solid black;
 		padding-left:48px;
 		padding-top:1px;
+		background-image:url('images/search.jpg');
 		font-size:22px;color:blue;
 		background-repeat:no-repeat;
 		background-position:center;outline:0;
@@ -203,7 +204,8 @@
 		    -webkit-appearance: none;
 		    height: 20px;
 		    width: 20px;
-		   background-image: url(https://github.com/arandusoft1/pythonrest1/blob/master/cancelarinput.png?raw=true)
+		    content: 'del';
+		    background: red;
           }
 
 	    
