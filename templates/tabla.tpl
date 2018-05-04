@@ -227,6 +227,22 @@
             }
 	    
 	    
+	    input[type=search] {
+	    	border: 1px dotted #999;
+	    	border-radius: 8px;
+	    	-webkit-appearance: button-bevel;
+	    	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	    	margin-left: 0px;
+	    	margin-top: 0px;
+	    	background-color: #333333;
+	    	outline-color: #333333;
+	    	color: ivory;
+	    	font-size: 15px;
+                font-weight: bolder;
+		width: 129px;
+	    }
+	    
+	    
 	    
 
 	 
