@@ -150,6 +150,12 @@
 			margin-top: 138px;
 		}
             }
+	    
+	    input[type=search] {
+	    	border: 1px dotted #999;
+	    	border-radius: 0;
+	    	-webkit-appearance: none;
+	    }
 
 	 
 	  
@@ -174,7 +180,7 @@
         <li><a href="/vigenciamayora24hs">Vigencia mayor a 24 hs</a></li>
 	<li>
 		<form action="/action_page.php">
-			Sucurasal: <input type="text" name="FirstName" value="Mickey"><br>
+			Buscar: <input type="search" name="FirstName" value="Sucursal"><br>
 			<input type="submit" value="Buscar">
 		</form> 
 	</li>
