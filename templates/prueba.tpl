@@ -242,10 +242,10 @@
 		}
 		
 		table {
-			font-size: 48px;
+			font-size: 39px;
 		}
-		table .foot {
-	        	font-size: 39px;
+		#principal {
+	        	font-size: 48px;
             	}
 		.container-4 input#search {
 			    height: 85;
