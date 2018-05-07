@@ -224,15 +224,16 @@
             		width: 100%;
 			min-width: 305px;
 			max-width: unset;
-			height: 175px;
+			height: 399px;
 			border-radius: 15px 15px 0px 0px;
             	}
 		li a {
 			text-align: center;
+			font-size: 60px;
 		}
 		div .a {
 			margin-left: 0px;
-			margin-top: 138px;
+			margin-top: 370px;
 		}
 		
 		h1 {
