@@ -234,11 +234,19 @@
 		div .a {
 			margin-left: 0px;
 			margin-top: 370px;
+		        font-size: 28px;
 		}
 		
 		h1 {
 			    margin-top: 40px;
 		}
+		
+		table {
+			font-size: 48px;
+		}
+		table .foot {
+	        	font-size: 39px;
+            	}
             }
 	    
 	    
