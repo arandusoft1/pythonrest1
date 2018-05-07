@@ -7,6 +7,7 @@ import psycopg2, psycopg2.extras
 import json
 ##from app import app
 ##from sys import argv
+import requests
 
 
 app = Flask(__name__, static_url_path = "")
@@ -102,13 +103,15 @@ def buscar():
 	rows = con.fetchall()
 	empresas= []
 	fmt = '%d/%m/%y %H:%M:%S'
-	ultact = "01/01/01 00:00:00"
+	#ultact = "01/01/01 00:00:00"
 	d2 = datetime.strptime(ultact,fmt)
+	r = requests.get('https://api.github.com/events')
+	ultact= r.json()['Ultima actualizacion']
 	
 	for row in rows:
 		empresas.append({"Empresa": row[1],"Sucursal": row[2],"fVigencia": row[3],"CantPrecio": row[4]})
 		#fvig.append({"fVigencia": row[3]})
-		d1 = datetime.strptime(row[3],fmt)		
+		"""d1 = datetime.strptime(row[3],fmt)		
 		diffhora= ((d1-d2).seconds)/3600.0
 		diffdias= (d1-d2).days
 		
@@ -118,7 +121,7 @@ def buscar():
 		elif diffdias == 0:
 			if diffhora > 0:
 				d2 = d1
-				ultact = row[3]
+				ultact = row[3]"""
 				
 	da1 = datetime.strptime(ultact,fmt) 
 	cont = 0	
