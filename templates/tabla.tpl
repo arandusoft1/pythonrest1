@@ -9,12 +9,12 @@
 	    	
 .container-4{
   overflow: hidden;
-  width: 300px;
+  width: 222px;
   vertical-align: middle;
   white-space: nowrap;
 }
 .container-4 input#search{
-  width: 300px;
+  width: 222px;
   height: 35px;
   background: #333333;
   border: none;
@@ -25,7 +25,7 @@
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
-  max-width: 221px;
+  max-width: 222px;
   padding-right: 50px;
 }
 .container-4 input#search::-webkit-input-placeholder {
