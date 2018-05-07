@@ -92,7 +92,7 @@ def index():
 
 #####################################################################################################################################
 
-@app.route('/buscarsucursal', methods=['POST'])
+"""@app.route('/buscarsucursal', methods=['POST'])
 def buscar():
 	if not 'sucursal' in request.form:
         	abort(400)
@@ -135,7 +135,7 @@ def buscar():
 	
 	#leer = json.loads(open('locales.json').read())	
 	return render_template('buscarsucursal.tpl', ultact=ultact,empresas=empresas)
-	##return template('tabla.tpl', leer)
+	##return template('tabla.tpl', leer)"""
 	
 #####################################################################################################################################
 
