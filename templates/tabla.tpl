@@ -26,6 +26,7 @@
   -moz-border-radius: 5px;
   border-radius: 5px;
   max-width: 221px;
+  padding-right: 50px;
 }
 .container-4 input#search::-webkit-input-placeholder {
    color: #fffff0;
