@@ -6,6 +6,14 @@
 	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 	
         <style>
+	
+	input::-ms-clear{
+		background-color: red;
+		color: white;
+		border: 1px solid #808080;
+	}
+	
+	
 	    	
 .container-4{
   overflow: hidden;
