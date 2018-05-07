@@ -7,7 +7,7 @@ import psycopg2, psycopg2.extras
 import json
 ##from app import app
 ##from sys import argv
-import requests
+#import requests
 
 
 app = Flask(__name__, static_url_path = "")
@@ -351,7 +351,7 @@ def get_task(task_nom):
 
 ######################################################################################################################################
 
-@app.route('/ultiact', methods=['GET'])
+"""@app.route('/ultiact', methods=['GET'])
 def ultiact():
 		
 	conn = psycopg2.connect(database='d3fkm1msg7kiub',user='wdtetudvoejjev',password='b7fefda1a504e80018b763ba3d8bcb94804c54dfff9a3372b4a70ee042dadf22', host='ec2-54-83-1-94.compute-1.amazonaws.com')
@@ -375,7 +375,7 @@ def ultiact():
 				d2 = d1
 				ultact = row[3]
         
-	return jsonify({'Ultima actualizacion': ultact})
+	return jsonify({'Ultima actualizacion': ultact})"""
 
 ######################################################################################################################################
 
