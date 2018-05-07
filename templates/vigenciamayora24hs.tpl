@@ -336,13 +336,17 @@
         </div>
 		
         <table style="width:90%" align="center" id="principal">
+	
+            <thead>
             <tr>
                 <th>Empresa</th>
                 <th>Sucursal</th> 
                 <th>Fecha de Vigencia</th>
                 <th>Cantidad de Precios</th>
             </tr>
-                        
+	    </thead>
+	    
+            <tbody>            
             {% for elemento in empresas: %}
                      
                 
@@ -358,7 +362,7 @@
 		
                         
             {% endfor %} 
-            
+            </tbody>
         </table>
 	<table style="width:90%; border: hidden; color: darkslategrey;" align="center" class="foot" >
 		<tr style="text-align:left; border: hidden;">
