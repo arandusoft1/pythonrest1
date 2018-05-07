@@ -252,6 +252,7 @@
 			    width: 100%;
 			    font-size: 60px;
 			    text-align: center;
+			    max-width: none;
 		}
 		
 		.container-4 button.icon {
