@@ -105,7 +105,7 @@ def buscar():
 	fmt = '%d/%m/%y %H:%M:%S'
 	#ultact = "01/01/01 00:00:00"
 	d2 = datetime.strptime(ultact,fmt)
-	r = requests.get('https://api.github.com/events')
+	r = requests.get('https://arandusoftdjango.herokuapp.com/ultiact')
 	ultact= r.json()['Ultima actualizacion']
 	
 	for row in rows:
