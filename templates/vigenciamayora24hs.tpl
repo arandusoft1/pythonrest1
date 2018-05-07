@@ -266,7 +266,7 @@
 		
 			<div class="box">
 				<div class="container-4">
-					<input name="sucursal" type="search" id="search" placeholder="Buscar sucursal..." />
+					<input name="sucursal" type="search" id="search" placeholder="Buscar sucursal..." required />
 					<button type="submit" class="icon"><i class="fa fa-search"></i></button>
 				</div>
 			</div>
