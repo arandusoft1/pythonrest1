@@ -142,10 +142,11 @@ def buscar():
 		
 		
 	#return repr(fvig)
-	ultact = ultiact()
+	
 	##leer = {"Empresas":  empresas , "UltAct": [{"fVigencia": ultact }]}		
+	
 	#leer = json.loads(open('locales.json').read())	
-	return render_template('buscarsucursal.tpl', ultact=ultact,empresas=empresas)
+	return render_template('prueba.tpl', ultact=ultact,empresas=empresas)
 	##return template('tabla.tpl', leer)
 	
 #####################################################################################################################################
