@@ -110,7 +110,7 @@ def buscar():
 	suc = request.form['sucursal']
 	
 	for row in rows:
-		if row[2] = suc:
+		if row[2] == suc:
 			empresas.append({"Empresa": row[1],"Sucursal": row[2],"fVigencia": row[3],"CantPrecio": row[4]})
 			
 		#fvig.append({"fVigencia": row[3]})
