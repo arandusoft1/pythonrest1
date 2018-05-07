@@ -234,6 +234,10 @@
 			margin-left: 0px;
 			margin-top: 138px;
 		}
+		
+		h1 {
+			    margin-top: 40px;
+		}
             }
 	    
 	    
