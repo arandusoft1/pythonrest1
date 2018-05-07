@@ -349,14 +349,14 @@ def get_tasks():
 #####################################################################################################################################
 @app.route('/jquery.js', methods=['GET'])
 def jquery():
-    js = open ('/templates/jquery.js', 'r').read()    
-    return js
+    js = open ('/templates/jquery.js').read()    
+    return str(js)
 
 #####################################################################################################################################
 @app.route('/jquery.tablesorter.js', methods=['GET'])
 def tablesorter():
-    js = open ('/templates/jquery.tablesorter.js', 'r').read()
-    return js
+    js = open ('/templates/jquery.tablesorter.js').read()
+    return str(js)
 
 
 
