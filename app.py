@@ -355,7 +355,7 @@ def jquery():
 #####################################################################################################################################
 @app.route('/jquery.tablesorter.js', methods=['GET'])
 def tablesorter():
-    js = open ('../templates/jquery.tablesorter.js').read()
+    js = open ('./templates/jquery.tablesorter.js').read()
     return str(js)
 
 
