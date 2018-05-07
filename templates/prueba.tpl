@@ -247,7 +247,7 @@
 		table .foot {
 	        	font-size: 39px;
             	}
-		input {
+		.container-4 input#search {
 			    height: 85;
 			    width: 100%;
 			    font-size: 60px;
@@ -256,7 +256,12 @@
 		
 		.container-4 button.icon {
 		    font-size: 22pt;
+		    height: 85px;
 		}
+		.container-4 {
+			width: 100%;
+		}
+		
             }
 	    
 	    
