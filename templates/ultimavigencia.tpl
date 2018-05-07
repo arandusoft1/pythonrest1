@@ -10,12 +10,12 @@
 	    	
 .container-4{
   overflow: hidden;
-  width: 300px;
+  width: 222px;
   vertical-align: middle;
   white-space: nowrap;
 }
 .container-4 input#search{
-  width: 300px;
+  width: 222px;
   height: 35px;
   background: #333333;
   border: none;
@@ -26,7 +26,9 @@
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
-  max-width: 221px;
+  max-width: 222px;
+  padding-right: 50px;
+  
 }
 .container-4 input#search::-webkit-input-placeholder {
    color: #fffff0;
@@ -65,7 +67,14 @@
   -o-transition: all .55s ease;
   transition: all .55s ease;
 }
-.container-4:hover button.icon, .container-4:active button.icon, .container-4:focus button.icon{
+.container-4:hover .container-4:active button.icon, .container-4:focus button.icon{
+    outline: none;
+    opacity: 1;
+    margin-left: -50px;
+    background: #111;
+  }
+  
+  .container-4:hover button.icon{
     outline: none;
     opacity: 1;
     margin-left: -50px;
