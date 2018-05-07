@@ -284,7 +284,7 @@
 	  
         </style>
 	
-	<script type="text/javascript" src="./jquery.js"></script>
+	<script type="text/javascript" src="../jquery.js"></script>
 	<script type="text/javascript" src="https://www.um.es/atica/documentos/forja/js/jqueryPlugins/tablesorter/doc/js/jquery.tablesorter.js"></script>
 	<script>	
 		$(document).ready(function() {
