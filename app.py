@@ -8,6 +8,7 @@ import json
 ##from app import app
 ##from sys import argv
 #import requests
+import sys
 
 
 app = Flask(__name__, static_url_path = "")
@@ -343,6 +344,23 @@ def vig_mayor24():
 @app.route('/empresas', methods=['GET'])
 def get_tasks():
     return jsonify({'Empresas': tasks})
+
+
+#####################################################################################################################################
+@app.route('/jquery.js', methods=['GET'])
+def jquery():
+    js = open ('/templates/jquery.js').read()
+    f.close()
+    return js
+
+#####################################################################################################################################
+@app.route('/jquery.tablesorter.js', methods=['GET'])
+def tablesorter():
+    js = open ('/templates/jquery.tablesorter.js').read()
+    f.close()
+    return js
+
+
 
 ######################################################################################################################################
 
