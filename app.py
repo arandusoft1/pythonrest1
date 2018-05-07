@@ -131,7 +131,7 @@ def buscar():
 	#return repr(fvig)
 	
 	##leer = {"Empresas":  empresas , "UltAct": [{"fVigencia": ultact }]}		
-	
+	ultact = "01/01/01 00:00:00"
 	#leer = json.loads(open('locales.json').read())	
 	return render_template('buscarsucursal.tpl', ultact=ultact,empresas=empresas)
 	##return template('tabla.tpl', leer)
