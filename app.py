@@ -104,7 +104,7 @@ def buscar():
 	empresas= []
 	fmt = '%d/%m/%y %H:%M:%S'
 	re = requests.get('https://arandusoftdjango.herokuapp.com/ultiact')
-	ultact = re.json()['Ultima actualizacion']	
+	ultact = str(re.json()['Ultima actualizacion'])	
 	
 	for row in rows:
 		empresas.append({"Empresa": row[1],"Sucursal": row[2],"fVigencia": row[3],"CantPrecio": row[4]})		
