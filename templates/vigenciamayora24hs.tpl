@@ -216,7 +216,7 @@
             	min-height:20px
 	    }
 	    
-	    @media screen and (max-width: 600px) {
+	    @media screen and (min-width: 600px) and (orientation: portrait) {
   	    	ul {
             		width: 100%;
 			min-width: 305px;
