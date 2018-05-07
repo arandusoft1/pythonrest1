@@ -359,7 +359,7 @@ input[type=search] {
 		
                         
             {% endfor %} 
-            <tbody>
+            </tbody>
         </table>
 	<table style="width:90%; border: hidden; color: darkslategrey;" align="center" class="foot" >
 		<tr style="text-align:left; border: hidden;">
