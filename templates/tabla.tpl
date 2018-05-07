@@ -7,12 +7,6 @@
 	
         <style>
 	
-	input::-ms-clear{
-		background-color: red;
-		color: white;
-		border: 1px solid #808080;
-	}
-	
 	
 	    	
 .container-4{
