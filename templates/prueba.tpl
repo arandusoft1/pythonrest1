@@ -286,8 +286,8 @@
 	</style>
 	
 	
-	<script type="text/javascript" src="jquery.js"></script>
-	<script type="text/javascript" src="jquery.tablesorter.js"></script>
+	<script type="text/javascript" src="https://www.um.es/atica/documentos/forja/js/jqueryPlugins/tablesorter/doc/js/jquery.js"></script>
+	<script type="text/javascript" src="https://www.um.es/atica/documentos/forja/js/jqueryPlugins/tablesorter/doc/js/jquery.tablesorter.js"></script>
 	<script>	
 		$(document).ready(function() {
 			//cuando la página se cargue convertimos la tabla con id "simple" en una tabla ordenable
