@@ -281,6 +281,17 @@ input[type=search] {
 	  
 	  
         </style>
+	
+		<script type="text/javascript" src="/jquery.js"></script>
+	<script type="text/javascript" src="/jquery.tablesorter.js"></script>
+	<script>	
+		$(document).ready(function() {
+			//cuando la página se cargue convertimos la tabla con id "simple" en una tabla ordenable
+				$("#principal").tableSorter();
+		});
+	</script>
+	
+	
     </head>
     <body bgcolor=#fffff>
       <div class="sticky">
@@ -322,12 +333,16 @@ input[type=search] {
         </div>
 		
         <table style="width:90%" align="center" id="principal">
-            <tr>
+           <thead>
+	   <tr>
                 <th>Empresa</th>
                 <th>Sucursal</th> 
                 <th>Fecha de Vigencia</th>
                 <th>Cantidad de Precios</th>
             </tr>
+	    </thead>
+	    
+	    <tbody>
                         
             {% for elemento in empresas: %}
                      
@@ -344,7 +359,7 @@ input[type=search] {
 		
                         
             {% endfor %} 
-            
+            <tbody>
         </table>
 	<table style="width:90%; border: hidden; color: darkslategrey;" align="center" class="foot" >
 		<tr style="text-align:left; border: hidden;">
