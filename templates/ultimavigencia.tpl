@@ -219,24 +219,51 @@
             	min-height:20px
 	    }
 	    
+	    
 	    @media screen and (min-width: 600px) and (orientation: portrait) {
   	    	ul {
             		width: 100%;
 			min-width: 305px;
 			max-width: unset;
-			height: 175px;
+			height: 425px;
 			border-radius: 15px 15px 0px 0px;
             	}
 		li a {
 			text-align: center;
+			font-size: 60px;
 		}
 		div .a {
 			margin-left: 0px;
-			margin-top: 138px;
+			margin-top: 370px;
+		        font-size: 28px;
 		}
+		
 		h1 {
-			    margin-top: 40px;
+			    margin-top: 52px;
 		}
+		
+		table {
+			font-size: 39px;
+		}
+		#principal {
+	        	font-size: 48px;
+            	}
+		.container-4 input#search {
+			    height: 85;
+			    width: 100%;
+			    font-size: 60px;
+			    text-align: center;
+			    max-width: none;
+		}
+		
+		.container-4 button.icon {
+		    font-size: 22pt;
+		    height: 85px;
+		}
+		.container-4 {
+			width: 100%;
+		}
+		
             }
 	    
 	    
