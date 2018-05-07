@@ -224,7 +224,7 @@
             		width: 100%;
 			min-width: 305px;
 			max-width: unset;
-			height: 399px;
+			height: 422px;
 			border-radius: 15px 15px 0px 0px;
             	}
 		li a {
