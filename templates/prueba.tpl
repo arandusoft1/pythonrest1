@@ -224,7 +224,7 @@
             		width: 100%;
 			min-width: 305px;
 			max-width: unset;
-			height: 422px;
+			height: 425px;
 			border-radius: 15px 15px 0px 0px;
             	}
 		li a {
@@ -238,7 +238,7 @@
 		}
 		
 		h1 {
-			    margin-top: 40px;
+			    margin-top: 52px;
 		}
 		
 		table {
@@ -247,6 +247,16 @@
 		table .foot {
 	        	font-size: 39px;
             	}
+		input {
+			    height: 85;
+			    width: 100%;
+			    font-size: 60px;
+			    text-align: center;
+		}
+		
+		.container-4 button.icon {
+		    font-size: 22pt;
+		}
             }
 	    
 	    
