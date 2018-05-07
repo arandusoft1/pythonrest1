@@ -240,7 +240,7 @@
 		}
 		
 		table {
-			font-size: 39px;
+			font-size: 35px;
 		}
 		#principal {
 	        	font-size: 48px;
