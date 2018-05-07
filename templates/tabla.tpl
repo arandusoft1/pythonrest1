@@ -68,6 +68,7 @@
     outline: none;
     opacity: 1;
     margin-left: -50px;
+    background: #111;
   }
  
   .container-4:hover button.icon:hover{
