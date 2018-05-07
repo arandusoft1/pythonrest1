@@ -64,11 +64,17 @@
   -o-transition: all .55s ease;
   transition: all .55s ease;
 }
-.container-4:hover button.icon, .container-4:active button.icon, .container-4:focus button.icon{
+.container-4:hover .container-4:active button.icon, .container-4:focus button.icon{
     outline: none;
     opacity: 1;
     margin-left: -50px;
     background: #111;
+  }
+  
+  .container-4:hover button.icon{
+    outline: none;
+    opacity: 1;
+    margin-left: -50px;
   }
  
   .container-4:hover button.icon:hover{
