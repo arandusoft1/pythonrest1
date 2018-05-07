@@ -127,7 +127,7 @@ def buscar():
 				ultact = row[3]
 				
 	if len(empresas) == 0:
-		return render_template('mensaje.tpl', mensaje= "No existe la sucursal " + suc )
+		return render_template('mensaje.tpl', mensaje= "No existe la sucursal '" + suc + "'" )
 				
 	da1 = datetime.strptime(ultact,fmt) 
 	cont = 0	
