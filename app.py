@@ -104,10 +104,23 @@ def buscar():
 	rows = con.fetchall()
 	empresas= []
 	fmt = '%d/%m/%y %H:%M:%S'
-	ultact = ultiact()
+	ultact = "01/01/01 00:00:00"
+	d2 = datetime.strptime(ultact,fmt)
 	
 	for row in rows:
-		empresas.append({"Empresa": row[1],"Sucursal": row[2],"fVigencia": row[3],"CantPrecio": row[4]})		
+		empresas.append({"Empresa": row[1],"Sucursal": row[2],"fVigencia": row[3],"CantPrecio": row[4]})
+		#fvig.append({"fVigencia": row[3]})
+		d1 = datetime.strptime(row[3],fmt)		
+		diffhora= ((d1-d2).seconds)/3600.0
+		diffdias= (d1-d2).days
+		
+		if diffdias > 0:
+			d2 = d1
+			ultact = row[3]
+		elif diffdias == 0:
+			if diffhora > 0:
+				d2 = d1
+				ultact = row[3]
 				
 	da1 = datetime.strptime(ultact,fmt) 
 	cont = 0	
@@ -129,9 +142,8 @@ def buscar():
 		
 		
 	#return repr(fvig)
-	
+	ultact = ultiact()
 	##leer = {"Empresas":  empresas , "UltAct": [{"fVigencia": ultact }]}		
-	ultact = "01/01/01 00:00:00"
 	#leer = json.loads(open('locales.json').read())	
 	return render_template('buscarsucursal.tpl', ultact=ultact,empresas=empresas)
 	##return template('tabla.tpl', leer)
