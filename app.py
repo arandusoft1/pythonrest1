@@ -354,15 +354,12 @@ def ultiact():
 	conn = psycopg2.connect(database='d3fkm1msg7kiub',user='wdtetudvoejjev',password='b7fefda1a504e80018b763ba3d8bcb94804c54dfff9a3372b4a70ee042dadf22', host='ec2-54-83-1-94.compute-1.amazonaws.com')
 	con = conn.cursor()
 	con.execute("select * from Empresas;")
-	rows = con.fetchall()
-	empresas= []
+	rows = con.fetchall()	
 	fmt = '%d/%m/%y %H:%M:%S'
 	ultact = "01/01/01 00:00:00"
 	d2 = datetime.strptime(ultact,fmt)
 	
-	for row in rows:
-		empresas.append({"Empresa": row[1],"Sucursal": row[2],"fVigencia": row[3],"CantPrecio": row[4]})
-		#fvig.append({"fVigencia": row[3]})
+	for row in rows:		
 		d1 = datetime.strptime(row[3],fmt)		
 		diffhora= ((d1-d2).seconds)/3600.0
 		diffdias= (d1-d2).days
