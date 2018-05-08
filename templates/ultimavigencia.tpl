@@ -6,7 +6,7 @@
 	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 	<link href="/cssfriar.css" rel="stylesheet">
 	
-		<script type="text/javascript" src="/jquery.js"></script>
+	<script type="text/javascript" src="/jquery.js"></script>
 	<script type="text/javascript" src="/jquery.tablesorter.js"></script>
 	<script>	
 		$(document).ready(function() {
