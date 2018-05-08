@@ -7,7 +7,7 @@
 	<link href="/cssfriar.css" rel="stylesheet">
 	
 	
-		<script type="text/javascript" src="/jquery.js"></script>
+	<script type="text/javascript" src="/jquery.js"></script>
 	<script type="text/javascript" src="/jquery.tablesorter.js"></script>
 	<script>	
 		$(document).ready(function() {
