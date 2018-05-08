@@ -262,6 +262,7 @@ div.sticky {
 		max-width: unset;
 		height: auto;
 		border-radius: 15px 15px 0px 0px;
+		position: initial;
 	}
 	li a {
 		text-align: center;
@@ -269,7 +270,7 @@ div.sticky {
 	}
 	div .a {
 		margin-left: 0px;
-		margin-top: 425px;
+		margin-top: 0px;
 		font-size: 28px;
 	}
 
