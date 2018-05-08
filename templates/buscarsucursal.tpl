@@ -277,10 +277,10 @@
 	    	font-size: 15px;
                 font-weight: bolder;
 		width: 129px;
-	    }
-	    
-	    
-	    	<script type="text/javascript" src="/jquery.js"></script>
+	    }  
+        </style>
+	
+	<script type="text/javascript" src="/jquery.js"></script>
 	<script type="text/javascript" src="/jquery.tablesorter.js"></script>
 	<script>	
 		$(document).ready(function() {
@@ -288,10 +288,8 @@
 				$("#principal").tableSorter();
 		});
 	</script>
-
-	 
-	  
-        </style>
+	
+	
     </head>
     <body bgcolor=#fffff>
       <div class="sticky">
