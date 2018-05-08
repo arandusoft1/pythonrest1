@@ -255,7 +255,7 @@ div.sticky {
 
 
 
-@media screen and (min-width: 600px) and (orientation: portrait) {
+@media screen and (min-width: 300px) and (max-width: 900px) and (orientation: portrait) {
 	ul {
 		width: 100%;
 		min-width: 305px;
