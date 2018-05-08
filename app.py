@@ -353,7 +353,7 @@ def jquery():
     return str(js)
 
 #####################################################################################################################################
-@app.route('/cssfriar.js', methods=['GET'])
+@app.route('/cssfriar.css', methods=['GET'])
 def cssfriar():
     css = open ('./templates/cssfriar.css').read()    
     return str(css)
