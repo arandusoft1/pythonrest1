@@ -331,13 +331,17 @@
         </div>
         
         <table style="width:90%" align="center" id="principal">
-            <tr>
+            
+	    <thead>
+	    <tr>
                 <th>Empresa</th>
                 <th>Sucursal</th> 
                 <th>Fecha de Vigencia</th>
                 <th>Cantidad de Precios</th>
             </tr>
-                        
+	    </thead>
+	    
+	    <tbody>
             {% for elemento in empresas: %}
                      
                 {% if elemento['color'] == "R": %} 
@@ -367,6 +371,7 @@
             
                         
             {% endfor %} 
+	    </tbody>
             
         </table>
         <table style="width:90%; border: hidden; color: darkslategrey;" align="center" class="foot" >
