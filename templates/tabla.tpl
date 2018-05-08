@@ -6,6 +6,17 @@
 	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 	<link href="/cssfriar.css" rel="stylesheet">	
 	
+	<script type="text/javascript" src="/jquery.js"></script>
+	<script type="text/javascript" src="/jquery.tablesorter.js"></script>
+	<script>	
+		$(document).ready(function() {
+			//cuando la página se cargue convertimos la tabla con id "simple" en una tabla ordenable
+				$("#principal").tableSorter();
+		});
+	</script>
+	
+	
+	
     </head>
     <body bgcolor=#fffff>
       <div class="sticky">
