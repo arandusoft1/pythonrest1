@@ -353,6 +353,12 @@ def jquery():
     return str(js)
 
 #####################################################################################################################################
+@app.route('/cssfriar.js', methods=['GET'])
+def cssfriar():
+    css = open ('./templates/cssfriar.css').read()    
+    return str(css)
+
+#####################################################################################################################################
 @app.route('/jquery.tablesorter.js', methods=['GET'])
 def tablesorter():
     js = open ('./templates/jquery.tablesorter.js').read()
